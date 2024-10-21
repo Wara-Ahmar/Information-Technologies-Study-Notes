@@ -1,0 +1,1424 @@
+#Information Technologies
+# This is a study guide for information technologies 
+# A major credit goes towards "How To Network", link to the channel is here https://www.youtube.com/@howtonetworkcom/featured
+# Edit history
+    # Created by Alex Klein on November 18 2023: developed general structure and started .motherboard, .bus, and .Data
+    # November 19 2023: 2 hours: Edited general structure, finished .bus, extended to .Motherboard, started .BIOS
+    # November 20 2023: 1 hour: Extended .BIOS, extended .CPU, added .Clock
+    # November 22 2023: 1/2 hour: Extended .RAM
+    # December 1 2023: 1/2 hour: Added .storage
+    # October 10 2024: 5 hours: Came back after a while and started working on making a better formatting method, extend .Storage added .Power started .Chassis
+    # October 11 2024: 4 hours: Definition changes, spell corrections, experimented with standardized formatting, added the 4 major catagories of information technologies: Hardware, Software, Networking, and Security, added many sub catagories to the major catagories like .Work and .Cloud
+    # October 12 2024: 3 hours: Extended .Work, added .Laptops, added .Mobile, added .Printers, added .Cameras, added .Tvs, added .Displays
+    # October 13 2024: 2 hours: Extended laptops, small extensions in several other locations 
+    # October 15 2024: 4 hours: Extended .Security, experimented with a better standardized formatting
+
+[Hardware]
+Name = 'Hardware'
+Note = 'The physical components of a computer system, including the devices used to input, process, store, and output information'
+
+[Hardware.Chassis]
+Name = 'Chassis'
+Note = 'The container that the electrical components of a computer fit within'
+
+[Hardware.Chassis.Form_Factor]
+Name = 'Form Factor'
+Note = 'The shape and orientation of the chassis'
+
+[Hardware.Chassis.Form_Factor.All_In_One]
+Name = 'All In One'
+Note = 'The monitor and the computer are apart of the same chassis'
+
+[Hardware.Chassis.Form_Factor.Tower]
+Name = 'Tower'
+Note = 'Made to stand vertical'
+
+[Hardware.Chassis.Form_Factor.Tower.Full]
+Name = 'Full Sized'
+Note = 'Typically 22 inch in hight and 6 - 10 assessable bays'
+
+[Hardware.Chassis.Form_Factor.Tower.Mid]
+Name = 'Mid Sized'
+Note = 'Typically 18 inch in hight and 2 - 4 assessable bays'
+
+[Hardware.Chassis.Form_Factor.Tower.Mini]
+Name = 'Mini Sized'
+Note = 'Typically 14 to 16 inch in hight and 1 - 2 assessable bays'
+
+[Hardware.Chassis.Form_Factor.Flat]
+Name = 'Flat'
+Note = 'Made to lay horizontal'
+
+[Hardware.Chassis.Form_Factor.Desktop.Pizza]
+Name = 'Desktop'
+Note = 'A desktop made to lay horizontal and about 2 inches high'
+
+[Hardware.Chassis.Form_Factor.Desktop.Rackmount]
+Name = 'Rackmount Computer'
+Note = 'A device made compatible for data racks'
+
+[Hardware.Chassis.Layout]
+Name = 'Layout'
+Note = 'The functionality of its shape and cutouts and how it relates to the functionality of the devices within the chassis'
+material = 'Made out of sheet metal for grounding'
+front = 'Typically has power buttons and switches, reset buttons, and LEDs to indicate the status of different aspects of the computer'
+back = 'Typically has a lot of ports and peripheral connectors'
+bays = 'The motherboard, 5.25" and 3.5" devices will be fastened down to the chassis typically using screws. predrilled holes on the motherboard line up with the hols in the chassis'
+
+[Hardware.Chassis.Layout.Air]
+Name = 'Airflow'
+Note = 'There are often various Vent cutouts in the framing of the chassis to fit fans, Other times there are vent slots. The chassis is designed to have a lot of open space to allow air to flow and be carried out'
+
+[Hardware.Chassis.Layout.Intrusion]
+Name = 'Intrusion Detection'
+Note = 'A device, typically a push button switch that attaches to the chassis and the motherboard, when the case is opened the switch changes position and it alerts the CMOS'
+
+# end of chassis
+
+[Hardware.Motherboard]
+Name = 'Motherboard'
+Note = 'Contains the chipset and connects all components of the computer together'
+manufacturers = 'Common manufactures include Intel, AMD, Apple...'
+
+[Hardware.Motherboard.Form]
+Name = 'Form Factor'
+Note = 'The size of the motherboard and how it relates to the components that can fit on it, larger the motherboard the more things you can fit on it and the better capability for more powerful devices'
+
+[Hardware.Motherboard.Form.ATX]
+Name = 'Advanced Technology Extended'
+Note = 'Very common and most popular model'
+width = '12'
+depth = '9.6'
+id = 'RAM slots and expansion slots are perpendicular to each other'
+
+[Hardware.Motherboard.Form.MATX]
+Name = 'Micro ATX'
+Note = 'Same as atx but used for smaller computers and able to connect to the ATX model'
+width_depth = '9.6'
+depth = '9.6'
+id = 'Smaller than ATX but backwards compatible'
+
+[Hardware.Motherboard.Form.ITX]
+Name = 'Nobody Knows What It Stands For'
+Note = 'Comes in mini, nano, and pico sises and good for power efficiency and commonly used in places that do not need much computation'
+width_depth = '60nm to 6.7in'
+id = 'For HTPCs, UMPCs, and smart phones'
+
+[Hardware.Motherboard.Form.BTX]
+Name = 'Balanced TX'
+Note = 'High load, high efficiency, and generates a lot of heat'
+width = '12.8'
+depth = '10.5'
+id = 'RAM slots and expansion slots are parallel to each other'
+
+# end of form factor
+
+[Hardware.Motherboard.Bridged]
+Name = 'Bridged Motherboard'
+Note = 'Motherboards in which the major components are separated by their functionality and connected by buses'
+
+[Hardware.Motherboard.Bridged.Chipset]
+Name = 'Chipset'
+Note = 'A group of bridged circuits or chips that determine the processes of the computer'
+
+[Hardware.Motherboard.Bridged.Chipset.Northbridge]
+Name = 'Northbridge'
+Note = 'Also called memory controller hub (MCH), handles high performance data transfers and is the middle man for the CPU, GPU, and RAM'
+
+[Hardware.Motherboard.Bridged.Chipset.Southbridge]
+Name = 'Southbridge'
+Note = 'Also called I/O controller hub (ICH), handles low performance data transfer such as secondary controllers, IPOP devices, hard drives, USB, ethernet'
+
+# end of bridged
+
+[Hardware.Motherboard.Clock]
+Name = 'Clock'
+Note = "A clock located on the motherboard that dictates the speed of each movement. every time the clock ticks the computer progress in its function by one movement. the tick occurs at the maximum of the voltage increase however some modern chips and functions are able to process during the rising and falling of the clock"
+
+[Hardware.Motherboard.Clock.Quartz]
+Name = "Quartz Crystal"
+Note = "In the clock is a quarts crystal which resonates at an analog frequency. The analog frequency is then picked up by and analog converter"
+
+[Hardware.Motherboard.Clock.Analog]
+Name = "Analog Converter"
+Note = "The analog frequency is transformed into a digital frequency which closely resembles a more defined on and off ticking function"
+
+[Hardware.Motherboard.CPU]
+Name = 'Central Processing Unit'
+Note = 'Executes general and high computational tasks at a slow rate'
+
+[Hardware.Motherboard.CPU.Cache]
+Name = "Cache"
+Note = "Temporary holding area for memory on its way to the cpu. comprised of L1 2 and 3, one being the fastest and 3 being the slowest. One having direct connection with the cpu and three having connection with the main memory bus"
+
+[Hardware.Motherboard.CPU.Hyperthreading]
+Name = "Hyperthreading"
+Note = "Allows a single cpu to accept and process two independent sets of instructions"
+
+[Hardware.Motherboard.CPU.Multicore]
+Name = "Multicore"
+Note = "Having more than one core so that it can process from mutable points of entry"
+
+[Hardware.Motherboard.CPU.Bit_Architecture]
+Name = "32 vs 64 Bit Architecture"
+Note = "64 allows for the CPU to process high ranges of data (around 16 exabytes) while 32 bit is limited to 4gb of data. The software must also support 64 bit as well. Also referred to as x86 or x64"
+
+[Hardware.Motherboard.CPU.Clock_Speed]
+Name = "Clock Speed"
+Note = "The current running speed in hertz"
+
+[Hardware.Motherboard.CPU.Clock_Speed.External]
+Name = "Motherboard clock speed"
+Note = "The clock speed set by the motherboard, known as the bus speed."
+
+[Hardware.Motherboard.CPU.Clock_Speed.Internal]
+Name = "Internal speed"
+Note = "The speed that the cpu can handle. make sure that the bus speed and the speed the cpu can handel is the same"
+
+[Hardware.Motherboard.CPU.Clock_Speed.Overclocking]
+Name = "Overclocking"
+Note = "Telling the computer that your cpu can handel more than it can so that the clock runs at a higher speed, in return the user experiences better graphics / faster computation"
+
+[Hardware.Motherboard.CPU.Virtualization]
+Name = "Virtualization"
+Note = "splits the tasks of the CPU and the space in the memory to support separately functioning computers. The future of computing"
+
+[Hardware.Motherboard.CPU.Cooling]
+Name = " CPU Cooling"
+Note = "Electricity causes heat due to friction, the cpu has a large surface are for electrical friction to occur and we need to cool it so that it is not damaged"
+
+[Hardware.Motherboard.CPU.Cooling.Thermal_Compound]
+Name = 'Thermal Compound'
+Note = 'Thermally conductive paste connecting the CPU to a heat sink'
+
+[Hardware.Motherboard.CPU.Cooling.Heat_Sink]
+Name = 'Heat Sink'
+Note = 'A block of metal with many thin slits and edges to radiate the heat away'
+
+[Hardware.Motherboard.CPU.Cooling.Fan]
+Name = 'Fan'
+Note = 'Blows the hot air out of the computer'
+
+[Hardware.Motherboard.CPU.Cooling.Liquid]
+Name = 'Liquid Cooling'
+Note = 'A liquid encased in tubing makes its way though the computer and attaches itself to components that generate the most heat. The heat is transferred to the liquid and carried away by a pump.'
+
+# end of cooling
+
+[Hardware.Motherboard.CPU.Socket]
+Name = "CPU Socket"
+Note = "The CPUs attachment method to the motherboard"
+
+[Hardware.Motherboard.CPU.Socket.ZIF]
+Name = "Zero Insertion Force"
+Note = "Invented to avoid any issues when installing a cpu. A little lever pushes the cpu into place with the correct orientation so that all of the pins fit in correctly without any bending"
+
+[Hardware.Motherboard.CPU.Socket.PGA]
+Name = "Pin Grid Array"
+Note = "Pins are arranged in a square shape on the cpu, in a regular array on the underside allowing for more pins per circuit "
+
+[Hardware.Motherboard.CPU.Socket.LGA]
+Name = "Land Grid Array"
+Note = "Pins are on the socket instead of the cpu"
+
+[Hardware.Motherboard.CPU.Socket.Intel]
+Name = "Intel"
+Note = "Major manufacturer, uses LGA sockets"
+
+[Hardware.Motherboard.CPU.Socket.Intel.755]
+Name = "Intel LGA 775"
+Note = "Core 2 Duo, core 2 Quad, xeon"
+
+[Hardware.Motherboard.CPU.Socket.Intel.1155]
+Name = "LGA 1155"
+Note = "Core i7, i5, i3, xeon"
+
+[Hardware.Motherboard.CPU.Socket.Intel.1156]
+Name = "LGA 1156"
+Note = "Core i7,i5,i3, xeon"
+
+[Hardware.Motherboard.CPU.Socket.Intel.1366]
+Name = "LGA 1366"
+Note = "Core i7, xeon"
+
+[Hardware.Motherboard.CPU.Socket.AMD]
+Name = "AMD"
+Note = "Major manufacturer, mostly uses ZIF"
+
+[Hardware.Motherboard.CPU.Socket.AMD.940]
+Name = "AMD 940"
+Note = "Opteron (like xeon) athlon 64 FX"
+
+[Hardware.Motherboard.CPU.Socket.AMD.AM2]
+Name = "AMD AM2"
+Note = "Athlon 64 x2 and 64"
+
+[Hardware.Motherboard.CPU.Socket.AMD.AM2plus]
+Name = ""
+Note = ""
+
+[Hardware.Motherboard.CPU.Socket.AMD.AM3]
+Name = ""
+Note = ""
+
+[Hardware.Motherboard.CPU.Socket.AMD.AM3plus]
+Name = ""
+Note = ""
+
+[Hardware.Motherboard.CPU.Socket.AMD.FM1]
+Name = ""
+Note = ""
+
+[Hardware.Motherboard.CPU.Socket.AMD.F]
+Name = ""
+Note = "uses LGA"
+
+# end of socket
+
+[Hardware.Motherboard.CPU.Integrated]
+Name = "Integrated GPU And CPU"
+Note = "Combines the functionality of the CPU and GPU, will be discussed in more detail at Motherboard.Integrated"
+
+# end of cpu
+
+[Hardware.Motherboard.GPU]
+Name = 'Graphics Processing Unit'
+Note = 'Carries out simple computation at a fast rate. Most graphics are simple to compute but numerous, the GPU is able to solve those easy problems fast'
+
+# end of gpu
+
+[Hardware.Motherboard.Card]
+Name = 'Expansion Cards'
+Note = 'An expansion card, also known as an expansion board, adapter card, peripheral card, or accessory card, is a printed circuit board (PCB) that can be inserted into an electrical connector or expansion slot on a computers motherboard to add functionality to a computer system.Expansion cards allow the capabilities and interfaces of a computer system to be extended or supplemented in a way appropriate to the tasks it will perform'
+example = 'Modem, audio, cellular, tv tuner cards as a few'
+
+[Hardware.Motherboard.Card.NIC]
+Name = 'Network interface card'
+Note = 'Used for internet'
+
+# end of expansion cards
+
+[Hardware.Motherboard.RAM]
+Name = 'Random Accesses Memory'
+Note = 'Short term information that is able to be accessed at a fast rate but in low volume. This information can be easily added and deleted'
+
+[Hardware.Motherboard.RAM.Memory_Controller]
+Name = 'Memory Controller'
+Note = 'Allocates the information needed by the CPU from the RAM, this is usually built onto the CPU'
+
+[Hardware.Motherboard.RAM.SRAM]
+Name = 'Static RAM'
+Note = 'Data is stored as a static image until the image is torn down,or moved, this method is very fast but not scalable meaning you can not store large "images" onto the SRAM'
+
+[Hardware.Motherboard.RAM.DRAM]
+Name = 'Dynamic RAM'
+Note = 'Data the at needs to be refreshed consistently, each bit is stored on separate capacitors, this is slower but simpler in design and more scalable meaning it can store more information. DRAM usually comes in sticks that are able to be added replaced or removed'
+
+[Hardware.Motherboard.RAM.DRAM.SIMM]
+Name = 'Single In Line Memory Module'
+Note = 'Most popular form of dram in the mid 90s, 32 bit data path and the contacts on either side of the stick are redundant. You would need to buy two of them to support 64 bit architecture' 
+
+[Hardware.Motherboard.RAM.DRAM.DIMM]
+Name = 'Dual In Line Memory Module'
+Note = 'The current more popular form of memory on the market, separate electrical contacts on either side of the stick, 64 bit data path' 
+
+[Hardware.Motherboard.RAM.DRAM.DIMM.SDRAM]
+Name = 'Synchronous Dram'
+Note = 'Synchronized to the system bus (mother board clock) the SDRAM waits for the clock signal before processing a command. allows the chip to process command while accepting others, this is called pipelining' 
+pins = '168'
+
+[Hardware.Motherboard.RAM.DRAM.DIMM.SDRAM.DDR]
+Name = 'Double data rate'
+Note = 'Processes data on the rising and falling transformation of the clock'
+voltage = '2.5' 
+data_rate = '400'
+bandwidth = '3.2'
+capacity = '1 GB'
+pins = '184'
+
+[Hardware.Motherboard.RAM.DRAM.DIM.SDRAM.DDR.2]
+Name = 'Version 2'
+voltage = '1.8' 
+data_rate = '800'
+bandwidth = '6.4'
+capacity = '4 GB'
+pins = '240'
+
+[Hardware.Motherboard.RAM.DRAM.DIM.SDRAM.DDR.3]
+Name = 'Version 3'
+voltage = '1.5' 
+data_rate = '2133'
+bandwidth = '17'
+capacity = '8 GB'
+pins = '240'
+
+[Hardware.Motherboard.RAM.DRAM.DIM.SDRAM.DDR.4]
+Name = 'Version 4'
+voltage = '1.2' 
+data_rate = '3200'
+bandwidth = '25.6'
+capacity = '32GB'
+
+[Hardware.Motherboard.RAM.DRAM.DIM.SDRAM.DDR.5]
+Name = 'Version 5'
+voltage = '1.1' 
+data_rate = '51200'
+bandwidth = '51.2'
+capacity = '128GB'
+
+# end of SDRAM
+
+[Hardware.Motherboard.RAM.DRAM.SODIMM]
+Name = 'Small outline DIMM'
+Note = 'About half the size of regular DIMMs, used for smaller spaces. comes in ddr 1 through 5' 
+
+[Hardware.Motherboard.RAM.DRAM.RDRAM]
+Name = 'Rambus DRAM'
+Note = 'Designed to replace DIMM SDRAM before DDR' 
+
+# end of DRAM
+
+[Hardware.Motherboard.RAM.ROM]
+Name = 'Read Only Memory'
+Note = 'As the name implies, the ROM is only meant to be read from and not written to. You can write to it by flashing it like with the bios'
+
+[Hardware.Motherboard.RAM.Latency]
+Name = 'Memory Latency'
+Note = 'Also known as the column address strobe latency, this is the delay between the memory controller requesting data, and the data availability. The lower the latency the better. Measured in nanoseconds but with RAM its measured in clock cycles'
+
+[Hardware.Motherboard.RAM.Multichannel_Architecture]
+Name = 'Multichannel Architecture'
+Note = 'Adds more channels of communication between DRAM and memory controller. Sticks are installed in matching banks on the motherboard'
+
+[Hardware.Motherboard.RAM.Multichannel_Architecture.Single]
+Name = 'Single Channel'
+Note = '64 bit'
+
+[Hardware.Motherboard.RAM.Multichannel_Architecture.Dual]
+Name = 'Dual Channel'
+Note = '128 bit'
+
+[Hardware.Motherboard.RAM.Multichannel_Architecture.Triple]
+Name = 'Triple Channel'
+Note = '192 bit'
+
+[Hardware.Motherboard.RAM.Multichannel_Architecture.Quad]
+Name = 'Quadruple Channel'
+Note = '256 bit'
+
+# end of multichannel architecture
+
+[Hardware.Motherboard.RAM.Single_Sided]
+Name = 'Single Sided'
+Note = 'Single sided chips have one bank on them an offers a higher density of data'
+
+[Hardware.Motherboard.RAM.Double_Sided]
+Name = 'Double Sided'
+Note = 'Double sided have two banks on the stick, a computer can only access one bank at a time so it is important to have the more important data on one side of the chip'
+
+[Hardware.Motherboard.RAM.Parity]
+Name = 'Parity'
+Note = 'Detects errors and adds redundancy to the data. For every "x" amount of data written another bit is added for security for the computer to make sure that the information it has is correct and uncorrupted. This method is slower but more secure'
+
+[Hardware.Motherboard.RAM.Non_Parity]
+Name = 'Non Parity'
+Note = 'Does not utilize redundancy but the computer runs faster'
+
+[Hardware.Motherboard.RAM.ECC]
+Name = 'Error Correction Code'
+Note = 'Detects and corrects data, stores 7 bits with every 32 bits of data. its more expensive and slower but provides integrity'
+
+[Hardware.Motherboard.RAM.Non_ECC]
+Name = 'Non Error Correction'
+Note = 'Fast, does not utilize ECC'
+
+[Hardware.Motherboard.RAM.Registered_Memory]
+Name = 'Registered Memory'
+Note = 'Also called buffered memory, it is an in-between of the RAM and the memory controller. It provides integrity to the signal.'
+
+# end of ram
+
+[Hardware.Motherboard.Integrated]
+Name = 'Integrated Chips'
+Note = 'Motherboards in which some of the major computational components functionality are combined together as a single chip'
+
+# I included APU and PCH in both this section and in motherboard.CPU
+
+[Hardware.Motherboard.Integrated.APU]
+Name = 'Accelerated Processing Unit'
+Note = 'Combines the functionality of the cpu and the gpu together as an integrated chip and does not utilize a bus to operate the cpu and gpu properties of the apu'
+
+[Hardware.Motherboard.Integrated.PCH]
+Name = 'Platform Controller Hub'
+Note = 'An integrated circuit of northbridge and southbridge the allows for better allocation of data transfer depending on the tasks being executed'
+example = 'If you are playing a game your computer will allocate faster data transfer to the gaming processes instead of applications or devised that may also be transferring data so that you can have higher performance'
+
+# end of integrated circuits
+# I included buses in motherboard because they are either directly integrated with the motherboard or are connected in a way that allows for external connection. Think of it as the motherboard having hands, the hands are buses and can connect to outside devices, Im not going to describe outside devices to be apart of the motherboard and will be describing them separately later on as "external devices"
+
+[Hardware.Motherboard.Bus]
+Name = 'Bus'
+Note = 'One or more formatted wires that carry information from one computational place to another. This can be internally within the motherboard or connecting externally to the motherboard'
+
+[Hardware.Motherboard.Bus.North_Chipset]
+Name = 'North Bridge Chipset Bus'
+Note = 'Buses that are used within the north bridge'
+
+[Hardware.Motherboard.Bus.North_Chipset.FSB]
+Name = 'Front Side Bus'
+Note = 'Connecting the CPU and the north bridged together'
+
+[Hardware.Motherboard.Bus.North_Chipset.HSGB]
+Name = 'High Speed Graphics Bus'
+Note = 'Connects the GPU with the northbridge'
+
+[Hardware.Motherboard.Bus.North_Chipset.MBUS]
+Name = 'Memory Bus'
+Note = 'Connects the north bridge to the RAM'
+
+[Hardware.Motherboard.Bus.Sbridged_Chipset]
+Name = 'South Bridge Chipset Bus'
+Note = 'Buses that connect to the south bridge'
+
+[Hardware.Motherboard.Bus.Sbridged_Chipset.DMI]
+Name = 'Direct media interface'
+Note = 'Connects the north and south bridge together'
+
+# the reason why I am not classifying the other buses as apart of the south bridge is because buses can connect to integrated chipsets and chipsets that are separated by north and south. For simplicity I am describing buses as there own thing. Same thing goes for north bridge.
+
+[Hardware.Motherboard.Bus.Converter]
+Name = 'Digital Media Converter'
+Note = 'A device that converts one digital formatting method to another'
+example = 'Usb to usb-c, hdmi to usb, hdmi to vga and so on'
+
+[Hardware.Motherboard.Bus.PCIE]
+Name = 'Peripheral Component Interconnect Express'
+Note = 'A high-speed serial bus standard for expansion cards. It offers faster data transfer rates than its predecessor, PCI, and is the most common bus standard for connecting high-performance devices'
+applications = 'Graphics cards, sound cards, network adapters, storage controllers'
+width = 'Serial, 1 - 16 full duplex lanes'
+
+[Hardware.Motherboard.Bus.PCI]
+Name = 'Peripheral Component Interconnect'
+Note = 'Outdated model, used to connect high performance cards'
+width = '32 bit'
+
+[Hardware.Motherboard.Bus.AGP]
+Name = 'Accelerated graphics port'
+Note = 'Used for graphic cards'
+width = '32 bit'
+
+[Hardware.Motherboard.Bus.ISA]
+Name = 'Industry Standard Architecture'
+Note = 'Very old expansion slot, not used anymore'
+
+[Hardware.Motherboard.Bus.SATA]
+Name = 'Serial Advanced Technology Attachment'
+Note = 'A serial interface for connecting storage devices. It offers faster data transfer rates and hot-swapping capabilities than its predecessor, PATA/IDE'
+applications = 'Hard drives, SSDs'
+specs = 'Up to 300 MB/s, 7 pin data cable, 1 device per cable (channel), sometimes power over cable if it does not it uses Molex.'
+
+[Hardware.Motherboard.Bus.IDE]
+Name = 'Integrated Drive Electronics'
+Note = 'Aka PATA, an older parallel bus standard for connecting storage devices. It was once the most common interface for connecting storage devices, but it has been largely supplanted by SATA due to its limitations in speed and scalability'
+applications = 'Hard drives, optical drives'
+specs = 'Up to 133 MB/s, 40 pin cable, 2 devices per cable, molex power'
+jumpers = 'You can have up to two devices using Pata, a device can either be the master or the slave (also called primary and secondary). The priority status of the drive can be configured by either covering or closing a set of pins set on the drive.'
+
+[Hardware.Motherboard.Bus.AMR]
+Name = "Audio Modem Riser"
+Note = 'Used for processing sounds, including sounds that can be produced by modems'
+
+[Hardware.Motherboard.Bus.PCMCIA]
+Name = 'Personal Computer Memory Card International Association'
+Note = 'Outdated model commonly used and could fit on the side of a laptop replaced by the USB'
+
+[Hardware.Motherboard.Bus.USB]
+Name = 'Universal Serial Bus'
+Note = 'A widely used bus standard for connecting peripherals. It is a versatile and easy-to-use interface that has become ubiquitous in modern computing. USB has evolved over several generations, offering increasing speeds and capabilities'
+applications = 'Keyboards, mice, printers, flash drives, external storage devices'
+
+[Hardware.Motherboard.Bus.USB.2]
+Name = 'Version'
+Note = 'Older method of USB'
+
+[Hardware.Motherboard.Bus.USB.3]
+Name = 'Version 3 and 3.1'
+Note = 'Compatible with USB 2 ports. The most modern version and fastest transfer rates, colored blue to indicate its version 3'
+
+[Hardware.Motherboard.Bus.USB.USBA]
+Name = 'Type A'
+Note = 'Most common bus standard but it is being seceded by type c'
+
+[Hardware.Motherboard.Bus.USB.USBB]
+Name = 'Type B'
+Note = 'Mostly used for larger devices like printers and is still used quite often'
+
+[Hardware.Motherboard.Bus.USB.USBB_Mini_Micro]
+Name = 'Type B Mini And Micro'
+Note = 'Not used that often'
+
+[Hardware.Motherboard.Bus.USB.USBC]
+Name = "USB Type C"
+Note = 'Most modern method ot connect external devices and can be used for transporting data and power transmission, it can also be flipped either way to terminate it'
+
+# end of USB
+
+[Hardware.Motherboard.Bus.DVI]
+Name = 'Digital Visual Interface'
+Note = 'Usually colored white, used for monitor graphics'
+
+[Hardware.Motherboard.Bus.Thunderbolt]
+Name = 'Thunderbolt'
+Note = 'A high-speed serial bus standard that combines the features of PCIe and DisplayPort. It offers even faster data transfer rates than FireWire, making it suitable for connecting external graphics cards, high-performance storage devices, and docking stations'
+applications = 'External graphics cards, high-performance storage devices, docking stations'
+
+[Hardware.Motherboard.Bus.Lighting]
+Name = 'Lighting Port'
+Note = 'Used by and for Apple devices only'
+
+[Hardware.Motherboard.Bus.HDMI]
+Name = 'High-Definition Multimedia Interface'
+Note = 'Used for hd video and audio'
+
+[Hardware.Motherboard.Bus.HDMI.Mini]
+Name = 'High-Definition Multimedia Interface Mini'
+Note = 'Used for hd video but not audio'
+
+[Hardware.Motherboard.Bus.Display_Port]
+Name = 'Display Port'
+Note = 'Another standard that is used for video because HDMI requires a royalty to be payed and display port does not'
+
+[Hardware.Motherboard.Bus.Optical_Audio]
+Name = 'Optical audio'
+Note = 'Digital instead of analog data to transmit audio information'
+
+[Hardware.Motherboard.Bus.eSATA]
+Name = 'External SATA'
+Note = 'A way to hook up an external hard drive'
+
+[Hardware.Motherboard.Bus.SCSI]
+Name = 'Small Computer System Interface'
+Note = 'A high-performance bus standard for connecting storage devices and other peripherals. It offers faster data transfer rates and more advanced features than IDE or SATA, making it well-suited for demanding applications like video editing and scientific computing'
+applications = 'Storage devices, RAID arrays, high-performance peripherals'
+specs = 'Several types of cables, 16 devices per cable using piggybacking, power on cord'
+addressing = 'Because you can fit up to 16 devices each device will get its own address assigned by the computer'
+
+[Hardware.Motherboard.Bus.FireWire]
+Name = 'FireWire'
+Note = 'A high-bandwidth bus standard for connecting digital video cameras and other peripherals. It offers high data transfer rates and low latency, making it ideal for real-time applications like video capture and editing'
+applications = 'Digital video cameras, high-performance peripherals'
+code = '1394'
+
+[Hardware.Motherboard.Bus.RJ45]
+Name = 'External SATA'
+Note = 'Used for internet'
+
+[Hardware.Motherboard.Bus.RJ11]
+Name = 'External SATA'
+Note = 'Used for landlines, has 4 pins'
+
+# end of bus
+
+[Hardware.Motherboard.BIOS]
+Name = 'Basic Input Output System'
+Note = 'The BIOS is the firmware that controls a computers hardware during the boot process. Its the first software to run when a computer is powered on. The BIOS bridges the gap between the operating system and the hardware components'
+
+[Hardware.Motherboard.BIOS.CMOS]
+Name = 'Complementary Metal Oxide Semiconductor'
+Note = 'Stores essential system settings like time, date, and boot order'
+Comment = 'Powered by a small battery to retain settings even when the computer is off'
+
+[Hardware.Motherboard.BIOS.CMOS.Battery]
+Name = 'Battery'
+Note = 'Prevents the CMOS from loosing data by providing it extra l'
+
+[Hardware.Motherboard.BIOS.POST]
+Name = 'Power On Self Test'
+Note = 'The first step in the boot process. It will detect errors on to the BIOS using code number or audio beeps in the case that the monitor does not work. It tells the user if there are any problems with the computer'
+
+[Hardware.Motherboard.BIOS.Flash_BIOS]
+Name = 'Flashing bios'
+Note = 'The process of updating the firmware that controls a computers hardware'
+
+[Hardware.Motherboard.BIOS.Configure_BIOS]
+Name = 'BIOS Configuration'
+Note = 'An option panel that allows you alter some of the information that is stored on the CMOS'
+
+[Hardware.Motherboard.BIOS.Configure_BIOS.Time_Date]
+Name = 'CMOS Time And Date'
+Note = 'Time and date is kept running by the CMOS battery. if the battery dies the date and time will constantly reset'
+
+[Hardware.Motherboard.BIOS.Configure_BIOS.Priority]
+Name = 'Boot device priority'
+Note = 'Gives priority to the os that should be booted but gives the option to boot other os'
+
+[Hardware.Motherboard.BIOS.Configure_BIOS.Password]
+Name = 'Bios Password'
+Note = 'Sets a password to alter the information in the bios. this information can be reset if you remove the battery in the CMOS'
+
+[Hardware.Motherboard.BIOS.Configure_BIOS.Virtualization]
+Name = 'Virtualization'
+Note = 'Multiple computers virtualized by the hardware. only works if the bios supports it. It works by dividing the tasks of the components in the hardware and hosting it to a virtual session'
+
+[Hardware.Motherboard.BIOS.Configure_BIOS.WOL]
+Name = 'Wake On Local Area Network'
+Note = 'allows the computer to be "woken up" though a network message'
+
+[Hardware.Motherboard.BIOS.Configure_BIOS.Monitoring]
+Name = 'Bios Monitoring'
+Note = 'The bios will monitor and process information about the hardwares function such as temperatures, performance, fan speeds, intrusion detections, voltage, and clock speeds in hz'
+
+# end of bios
+# end of motherboard
+
+[Hardware.Storage]
+Name = 'Storage'
+Note = 'The methods and systems of storing information in a non volatile manner on a device'
+
+[Hardware.Storage.Magnetic]
+Name = 'Magnetic Storage'
+Note = 'Information is stored in a magnetic responsive material. A write head will alter the magnetic signal on the material and a read head will observe the magnetic signal and output it as an electronic signal'
+
+[Hardware.Storage.Magnetic.HDD]
+Name = 'Hard Disk Drives'
+Note = 'Contains multiple hard disks and a read write head. Also contains onboard DRAM and can be both internal and external device'
+specs = '3.5 inch, can use SATA, PATA or SCSI, can usually store GB or TB, 7200 or 5400 RPM'
+
+[Hardware.Storage.Magnetic.FDD]
+Name = 'Floppy Disk Drive'
+Note = 'Used to be one of the only form of removable media. Non existent today but may be needed to access older data. Some computers used to run entirely off of floppy. when you boot of a system with a floppy dive your system may show '
+specs = '3.5 inch, 34-pin data cable, berg power connection'
+
+[Hardware.Storage.Magnetic.Tape]
+Name = 'Tape Drives'
+Note = 'Very slow and used for archival data storage using magnetic data strips. Both internal and external device and require a special driver'
+
+# end of magnetic
+
+[Hardware.Storage.Optical]
+Name = 'Optical Storage'
+Note = 'a laser will engrave information onto a malleable disc, another laser can observe the engraved surface and output the topology as a digital signal. Recording speed measured in "x" which is 150 kb/s'
+
+[Hardware.Storage.Optical.ROM]
+Name = 'Read Only Optical Memory'
+Note = 'When the information is written onto the medium it can not be changed or rewritten and is read only'
+
+[Hardware.Storage.Optical.R]
+Name = 'Read / Write Optical Memory'
+Note = 'You can read and write on the disc but you can not rewrite already written information'
+
+[Hardware.Storage.Optical.RW]
+Name = 'Write And Rewrite'
+Note = 'You can read, write and rewrite information on the disc. It is very expensive and not commonly used'
+
+[Hardware.Storage.Optical.layers]
+Name = 'Disc Layers'
+Note = 'information can be encoded and read on either single or multiple layers on the disc allowing for more data to be stored'
+specs = 'a one layer DVD allows for about 4.7 gb'
+
+[Hardware.Storage.Optical.sides]
+Name = 'Disc Sides'
+Note = 'Each side of the disc is encoded differently'
+
+[Hardware.Storage.Optical.CD]
+Name = 'Compact disc'
+Note = '1x speed, up to 700 MB data or 80 minutes of audio. Uses PATA or SATA and can have audio outputs. Fits in a 5 1/4 inch bay'
+
+[Hardware.Storage.Optical.DVD]
+Name = 'Digital versatile discs'
+Note = 'Reads at 16x and you need DVD software to use properly '
+
+[Hardware.Storage.Optical.Blue_Ray]
+Name = 'Blue ray'
+Note = 'Replaced the DVD, 1x to 12x speeds, holds up to 25 GB per layer. Connects using SATA and is backwards compatible with CDs and DVDs. Must have correct software'
+
+# end of optical
+
+[Hardware.Storage.Solid_State]
+Name = 'Solid state storage'
+Note = 'Data stored in methods more closely resembling RAM. It uses integrated circuits with no moving parts making it consume less power and fewer chances of failure but it the cost of decreased storage'
+
+[Hardware.Storage.Solid_State.USB]
+Name = 'USB Flash Drives'
+Note = 'Portable handheld device used for small space storage. Usually connects using USB'
+
+[Hardware.Storage.Solid_State.SD]
+Name = 'Secure Digital Cards'
+Note = 'Uses USB technology in a special form factor and is typically used in small portable devices. Regular has a 2GB limit, High capacity has 32 GB limit, and eXtended as a 2TB limit. "Class" determines the transfer rate, some devices require specific class'
+
+[Hardware.Storage.Solid_State.Compact_Flash]
+Name = 'Compact Flash'
+Note = 'Comes in type 1 which is 3.3mm and type 2 which is 2.5mm. Higher capacity at 137 GB and typically not meant to be removable'
+
+# end of solid state
+
+[Hardware.Storage.NAS]
+Name = 'Network attached storage'
+Note = 'typically a high storage device that can be accessed from any device on the network. Most models include removable expansion slots, a GUI to interact with the device, and may include a built in firewall for security'
+
+
+# end of storage
+
+[Hardware.Power]
+Name = 'Power'
+Note = 'The way in which devices are powered'
+
+[Hardware.Power.Electrical_Concepts]
+Name = 'Electrical concepts'
+Note = 'How electricity works as it related to information technologies'
+
+[Hardware.Power.Electrical_Concepts.Charge]
+Name = 'Electrical Charge'
+Note = 'If an atom has more electrons than protons, it has a negative charge, and if it has fewer electrons than protons, it has a positive charge; like charges repel each other, while unlike charges attract each other. Positively charged things natural pull in the negative charge creating a flow'
+
+[Hardware.Power.Electrical_Concepts.Voltage]
+Name = 'Voltage'
+Note = 'The electrical potential energy and the measure of pressure needed to move a charge against the forces that keep charges balanced.voltage coming into a house is typically 120v with two passes, having a potential combined voltage of 240.'
+
+[Hardware.Power.Electrical_Concepts.Amperage]
+Name = 'Amperage'
+Note = 'The volume of electrical charge passing through at any point in time'
+
+[Hardware.Power.Electrical_Concepts.Wattage]
+Name = 'Wattage'
+Note = 'The pressure and volume that an electrical charge travels. calculated as amperage x voltage.'
+
+[Hardware.Power.Electrical_Concepts.Impedance]
+Name = 'Impedance'
+Note = 'Also called resistance, is the opposition force against voltage and it restricts the flow of electrical charge. Measured in Ohms.'
+
+[Hardware.Power.Electrical_Concepts.AC]
+Name = 'Alternating Current'
+Note = 'The direction of the current of electrical charge alternates at a set frequency and it allows for the ability to adjust the balances between voltage and amperage using a device'
+
+[Hardware.Power.Electrical_Concepts.DC]
+Name = 'Direct Current'
+Note = 'Current flows from negative charge to positive charge without any alternation of the direction of flow, mostly used within electrical devices'
+
+[Hardware.Power.Electrical_Concepts.Grounding]
+Name = 'Grounding'
+Note = 'Charges are naturally attracted to ground, wires connected to grounding rods provide this path to ground.'
+
+# end of electrical concepts
+
+[Hardware.Power.Issues]
+Name = 'Electrical Issues'
+Note = 'Electrical abnormalities that can effect electric devices'
+
+[Hardware.Power.Issues.Surge]
+Name = 'Surge'
+Note = 'Influx of voltage that can damage or destroy a device'
+
+[Hardware.Power.Issues.Spike]
+Name = 'Spike'
+Note = 'Very short and momentary increase of voltage'
+
+[Hardware.Power.Issues.Sag]
+Name = 'Sag'
+Note = 'Very short and momentary decrease of voltage'
+
+[Hardware.Power.Issues.Brownout]
+Name = 'Brownout'
+Note = 'A long term drop in voltage'
+
+[Hardware.Power.Issues.Blackout]
+Name = 'Blackout'
+Note = 'Compleat loss of power usually followed by a spike of power when the power comes back on'
+
+# end of Issues
+
+[Hardware.Power.Devices]
+Name = 'Power Distribution Devices'
+Note = 'Devices that provide, protect, and alter the electricity information technologies need'
+
+[Hardware.Power.Devices.Supply]
+Name = 'Power Supply'
+Note = 'Converts AC to DC and supplies power to every component inside the computer. The device has an on off switch and usually contain a switch to adapt to different countries voltages. Range from 300 to 1000W'
+
+[Hardware.Power.Devices.Protective]
+Name = 'Protective'
+Note = 'A piece of equipment that protects a device from the potential danger of electrical spikes, sags, surges, brownouts, and blackouts'
+
+[Hardware.Power.Devices.Protective.Surge_Protectors]
+Name = 'Surge Protectors'
+Note = 'A device that provides a steady current to avoid surges and spikes. It works by using a metal filament called a metal oxide varistor or MOV, it restricts the flow of voltage within a steady range and any access voltage gets returned to ground. They can either be installed directly into the electric panel or it can be plugged into the wall before other electrical devices. Surge protectors can also be built into electrical devices themselves.'
+
+[Hardware.Power.Devices.UPS]
+Name = 'Uninterruptible power supply'
+Note = 'A piece of equipment that protects a device from all potential problems and provides a consistently steady flow of electricity. It contains a surge protector and a backup battery during a brownout or blackout'
+
+[Hardware.Power.Devices.distributors]
+Name = 'Distributors'
+Note = 'A piece of equipment that distributes electricity from an outlet or hardwired source to multiple locations.'
+
+[Hardware.Power.Devices.distributors.strips]
+Name = 'Power strips'
+Note = 'A plug in method to daisy chain the power from one outlet into many more on a stick. Usually contains a 10 to 15 amp breaker to avoid overdraw'
+
+[Hardware.Power.Devices.distributors.rackstrips]
+Name = 'Rackmount power strips'
+Note = 'a power strip built into or adapted to be mounted in a data rack'
+
+[Hardware.Power.Devices.connectors]
+Name = 'power supply connectors'
+Note = 'power cables going from the power supply to the devices'
+
+[Hardware.Power.Devices.connectors.molex]
+Name = 'Molex'
+Note = 'used to power IDE / PATA'
+
+[Hardware.Power.Devices.connectors.BERG]
+Name = 'BERG'
+Note = 'used to power floppy drives'
+
+[Hardware.Power.Devices.connectors.SATA]
+Name = 'SATA'
+Note = 'used to power SATA'
+
+[Hardware.Power.Devices.connectors.PCI-e]
+Name = 'PCI-e'
+Note = 'Used to power PCI-a devices (graphics)'
+
+# end of devices
+
+[Hardware.Laptops]
+Name = 'Laptops'
+Note = 'Portable computers that are foldable like a book'
+
+[Hardware.Laptops.RAM]
+Name = 'Laptop RAM'
+Note = 'Laptops typically use SO-DIMM cards or small outline memory modules. Newer computers are now having the RAM directly integrated into the board'
+
+[Hardware.Laptops.CPU]
+Name = 'Laptop CPU'
+Note = 'Most are integrated and cannot be removed'
+
+[Hardware.Laptops.GPU]
+Name = 'GPU'
+Note = 'GPUs are typically integrated into the motherboard or into the CPU because there is not much space to fit card based devices'
+
+[Hardware.Laptops.Ports]
+Name = 'Ports'
+Note = 'Ports are located on the lower, sitting section of the computer, they contain the same port standards as regular standing computer. Older laptops used to contain many ports with a wide variety but now there are typically a just a few USB ports'
+
+[Hardware.Laptops.Keyboard]
+Name = 'Keyboards'
+Note = 'Its a keyboard, its built it, yup.'
+
+[Hardware.Laptops.Keyboard.Layout]
+Name = 'Layout'
+Note = 'There are a few shapes and standards for the keyboard. Some keyboards have number pads on the right hand side and some have them shared with the letters, using the function numlock command will activate the number pad. The function abilities vary between keyboard so you should be familiar with what your keyboards are capable of'
+
+[Hardware.Laptops.Keyboard.Connector]
+Name = 'Connector'
+Note = 'Connects using a flex cable connector'
+
+[Hardware.Laptops.Pointing_Devices]
+Name = 'Pointing Devices'
+Note = 'Allows you to move the mouse using a device on the laptop'
+
+[Hardware.Laptops.Pointing_Devices.Trackpad]
+Name = 'Trackpad'
+Note = 'A pad that senses touch to move the mouse and buttons to command the mouse'
+
+[Hardware.Laptops.Pointing_Devices.Eraserhead]
+Name = 'Eraserhead'
+Note = 'Also called trackpoint, it is motion sensitive and will move the mouse in the direction you push it. Some models allow you to click the mouse. Like a joystick'
+
+[Hardware.Laptops.Pointing_Devices.Stylus]
+Name = 'Stylus'
+Note = 'A pen that allows you to interact with the screen of the laptop or a separate tablet pad'
+
+[Hardware.Laptops.Video]
+Name = 'Video'
+Note = 'Portable computers that are foldable like a book'
+
+[Hardware.Laptops.Video.LCD]
+Name = 'LCD'
+Note = 'Most laptops utilize liquid crystal display, discussed in Hardware.Displays'
+
+[Hardware.Laptops.Video.Resolution]
+Name = 'Resolution'
+Note = 'The resolution is at a fixed standard'
+
+[Hardware.Laptops.Video.Resolution.WXGA]
+Name = 'Widescreen Extended Graphics Array'
+Note = 'resolution standard'
+horizontal_by_vertical = '1280 by 800'
+aspect_ratio = '16:10'
+
+[Hardware.Laptops.Video.Resolution.HD]
+Name = 'Resolution'
+Note = 'Similar to WXGA'
+horizontal_by_vertical = '1366 by 768'
+aspect_ratio = '16:9'
+
+[Hardware.Laptops.Video.Resolution.WXGA_Plus]
+Name = 'Widescreen Extended Graphics Array Plus'
+Note = 'The resolution is at a fixed standard'
+horizontal_by_vertical = '1680 by 1050'
+aspect_ratio = '16:10'
+
+[Hardware.Laptops.Video.Resolution.HD_Plus]
+Name = 'High definition Display Plus'
+Note = 'Similar to WXGA+'
+horizontal_by_vertical = '1680 by 945'
+aspect_ratio = '16:9'
+
+[Hardware.Laptops.Audio]
+Name = 'Audio'
+Note = 'Integrated mini-PCI and speakers. Volume adjusted by buttons or sliders on the screen'
+
+[Hardware.Laptops.Storage]
+Name = 'Storage'
+Note = 'Most storage systems are removable however companies are making the shift to not contain removable or replicable technologies. Most laptops use solid state storage but you can find some HDD storage in cheaper or older laptops. If the storage is removable it is typically 2.5 inch instead of 3.5 inch. Optical drives are also common with older laptops'
+
+[Hardware.Laptops.Power]
+Name = 'Power'
+Note = 'Most laptops use a lithium ion battery, older models sometimes have removable batteries assessable from the outside. Newer models typically do not have this feature and a battery replacement'
+
+[Hardware.Laptops.Fans]
+Name = 'Fans'
+Note = 'Placed closest to the CPU. A thick copper rail leads to the fan which carries heat from major components'
+
+[Hardware.Laptops.Expansion_Devices]
+Name = 'Expansion Devices'
+Note = 'Devices you can add to your computer to allow for new or expanded functionality'
+
+[Hardware.Laptops.External]
+Name = 'External'
+Note = 'Many older computers used to have PCMCIA cards which would allow you to add new functionality to your computer like more USBs, and networking. PCMCIA needs to be supported by the OS in order to work. Newer computers have port extenders / converters / dockers that utilize USB technology. One of the most popular methods is to use a docking stations, it allows the computer to connect to between 5 - 15 other devices, it contains several different ports so that it can connect to most devices'
+
+[Hardware.Laptops.Internal]
+Name = 'Internal'
+Note = 'You can swap out cards like mini-PCI for mini-PCIe, or you can swap out a 500GB storage for a 1TB storage'
+
+[Hardware.Laptops.Communications]
+Name = 'Communications'
+Note = 'Methods that commuters use to connect to others computers'
+
+[Hardware.Laptops.Communications.Cellular]
+Name = 'Cellular'
+Note = 'Used in the oldest laptops to connect to the internet via a cellular line'
+
+[Hardware.Laptops.Communications.Wifi]
+Name = 'Wifi'
+Note = 'Laptops can either be connected via wire with RJ45, or by the more common wireless method using an internal antenna'
+
+[Hardware.Laptops.Communications.Bluetooth]
+Name = 'Bluetooth'
+Note = 'Allows the user to make a wireless personal area network, you can connect a mouse, airpods, smart devices, and many more. Some laptops utilize bluetooth to allow you to connect your phone or even another computer'
+
+[Hardware.Laptops.Communications.Infrared]
+Name = 'Infrared'
+Note = 'Very rare, it allows the user to use an infrared remote to control the computer'
+
+# end of laptops
+
+[Hardware.Mobile]
+Name = 'Mobile Devices'
+Note = 'Small handheld devices often used for calling or watching things'
+
+[Hardware.Mobile.Phone]
+Name = 'Phone'
+Note = 'Small handheld cellular device that is able to fit in your pocket'
+
+[Hardware.Mobile.Tablets]
+Name = 'Tablets'
+Note = 'A widescreen touch sensitive device mostly used for art, entertainment, or work'
+
+# end of mobile
+
+[Hardware.Cameras]
+Name = 'Cameras'
+Note = 'A device for recording visual images in the form of photographs or videos'
+
+# end of cameras
+
+[Hardware.Audio_Equipment]
+Name = 'Audio Equipment'
+Note = 'devices that record, reproduce, or process sound'
+
+# end of audio equipment
+
+[Hardware.Displays]
+Name = 'Displays'
+Note = 'Either a flat panel screen or a segmented display that shows information such as characters, numbers, images, videos, or web pages'
+
+[Hardware.Displays.Segmented]
+Name = 'Segmented Display'
+Note = 'LEDs display characters by lighting up individual segments'
+
+[Hardware.Displays.Dot_Matrix]
+Name = 'Segmented Display'
+Note = 'LEDs display characters by lighting up individual segments'
+
+[Hardware.Displays.Matrix]
+Name = 'Segmented Display'
+Note = 'LEDs display characters by lighting up individual segments'
+
+# end of displays
+
+[Hardware.Tvs]
+Name = 'Televisions'
+Note = 'a system for transmitting visual images and sound that are reproduced on screens, chiefly used to broadcast programs for entertainment, information, and education'
+
+# end of tvs
+
+[Hardware.Printers]
+Name = 'Printers'
+Note = 'Graphic output technology capable of taking a preset design and replicating it onto a substrate'
+
+# end of printers
+
+[Hardware.Networking]
+Name = 'Networking'
+Note = 'The hardware involved in interconnecting devices'
+
+# end of networking
+
+[Hardware.Work]
+Name = 'Work'
+Note = 'The building or maintenance involved with hardware'
+
+[Hardware.Work.Safety]
+Name = 'Safety'
+Note = 'Preventing damage to the electronics or self harm'
+
+[Hardware.Work.Safety.ESD]
+Name = 'Electrostatic Discharge Prevention'
+Note = 'Tiny electrical shocks from your body that may damage sensitive electrical equipment'
+
+[Hardware.Work.Safety.ESD.Tools]
+Name = 'ESD Tools'
+Note = 'ESD rated tools meant for working on electrical components'
+
+[Hardware.Work.Safety.ESD.Bag]
+Name = 'Anti-Static Bag'
+Note = 'Allows electrical components to be transported safely and it mitigates static buildup'
+
+[Hardware.Work.Safety.ESD.Mat]
+Name = 'Anti-Static Mat'
+Note = 'A grounded mat used for working on electrical components, it has an alligator clip on it to ground the chassis'
+
+[Hardware.Work.Safety.ESD.Strap]
+Name = 'Anti-Static Wrist Strap'
+Note = 'A wrist strap connected to a small wire that connects to ground'
+
+[Hardware.Work.Safety.ESD.Spray]
+Name = 'Anti-Static Spray'
+Note = 'Reduces static electricity in the environment by providing slight humidity at a safe level'
+
+[Hardware.Work.Safety.ESD.Environment]
+Name = 'Environmental Conditions'
+Note = 'Working in contact with materials like cloth or carpet can cause problems. Dry air can accelerate static charges. A work environment should have around 50% humidity and working materials that cannot produce significant electrical charges.'
+
+# end of ESD
+# end of safety
+
+[Hardware.Work.Building]
+Name = 'Building'
+Note = ''
+
+[Hardware.Work.Building.Choosing]
+Name = 'Choosing The Parts'
+Note = 'Determining what you want the computer to do and what parts your should buy to fit those needs'
+help = 'You can do the research and figure it out yourself however online tools will be the most reliable way to determine what you need to get the computer you want, here is a link to an online tool https://pcpartpicker.com/'
+
+[Hardware.Work.Building.Chassis]
+Name = 'Preparing The Chassis'
+Note = 'The frame has a standardized system so that it fits together. There are different standards for how the frame is put together and its dependent on several factors such as weather or not the chassis has a glass plate. Consult the instructions for how the frame should be put together. Generally the frame has overlapping portions of folded metal that line up with each other when put in the correct position, once in the right position you can use a screw to fasten them together'
+
+[Hardware.Work.Building.Chassis.Fittings]
+Name = 'Fittings'
+Note = 'Small components used to fasten things to the frame of the chassis. Once all the fittings are on, you connect the metal frame of the chassis to the ESD clip'
+
+[Hardware.Work.Building.Chassis.Fitting.Standoffs]
+Name = 'Standoffs'
+Note = 'Fastens electrical boards to the frame of the chassis, this is put on before the board itself. It provides a secure distance between the electrical components and the metal frame of the chassis'
+
+[Hardware.Work.Building.Motherboard]
+Name = 'Installing The Motherboard'
+Note = 'The motherboard is placed in the chassis lining up with the standoffs and is securely fastened down'
+
+[Hardware.Work.Building.CPU]
+Name = 'Installing The CPU'
+Note = 'Before installing, make sure that the CPU is laying face side up to avoid any damage. Securely hold it by its sides with clean hands and place it in the correct orientation into its socket.Make sure it is lined up and lightly pull on the lever making sure it clips into location. Then remove any film or sticker from the CPU and apply thermal paste'
+
+[Hardware.Work.Building.Cooling.Heat_Sink]
+Name = 'Heat Sing'
+Note = 'Apply the heat sink to the CPU. Some heat sinks will attach using a clipping mechanism, some will be fastened down using screws, consult your manufacturers instructions for proper installation'
+
+[Hardware.Work.Building.Cooling.Fan]
+Name = 'Installing Fan Cooling'
+Note = 'Most fans are fastened down using screws, consult your manufacturers instructions for proper installation. There will be a dedicated set of pins on the motherboard to plug in the fan'
+
+[Hardware.Work.Building.Cooling.Liquid]
+Name = 'Installing Liquid Cooling'
+Note = ''
+
+[Hardware.Work.Building.RAM]
+Name = 'Installing The RAM'
+Note = 'There are two clips on either side of the socket, make sure that the clips are pushed outwards, insert the RAM stick making sure that the keying lines up, push the clips into the RAM stick making sure that they insert into the keying on the side of the stick. Be mindful if your RAM sockets have multichannel architecture so that you can place your RAM sticks in the right slots'
+
+[Hardware.Work.Building.GPU]
+Name = 'Installing The GPU'
+Note = 'Installed similar to the RAM, consult your manufacturers instructions for proper installation'
+
+[Hardware.Work.Building.Storage]
+Name = 'Installing The Storage'
+Note = 'Install the storage devices into there bays, either 5.5 inch or 3.5 inch. Fasten them down using screws. The method you use to plug them in depends if they are PATA or SATA, be mindful that if it is PATA that you have to set primary and secondary statuses to the drives.'
+
+[Hardware.Work.Building.Power_Supply]
+Name = 'Installing The Power Supply'
+Note = 'Make sure the kill switch is set to off. Set the voltage to your countries voltage. Inset the power supply into its dedicated position within the chassis and fasten it in. Make sure to plug in each cable to its designated area'
+
+[Hardware.Work.Building.Booting]
+Name = 'Booting The Computer'
+Note = 'Keep the chassis open, remove the ESD strap, plug in the power supply and turn on the power. Connect the monitor and any other external connections. Visually check to see if the mechanical components are working, like fans. Check to see if the BIOS is reading correctly'
+
+[Hardware.Work.Building.Finishing]
+Name = 'Finishing Installations'
+Note = 'Power off the computer, put the case on, and clean up'
+
+[Hardware.Work.Maintenance]
+Name = 'Maintenance'
+Note = 'A preventative measure to ensure the well functioning of a device'
+
+[Hardware.Work.Troubleshooting]
+Name = 'Troubleshooting'
+Note = 'Detecting a problem accurately and solving it'
+
+[Hardware.Work.Troubleshooting.Motherboard]
+Name = 'Troubleshooting'
+Note = 'Problems that motherboards have and solutions to fix it'
+
+[Hardware.Work.Troubleshooting.Storage]
+Name = 'Troubleshooting'
+Note = 'Problems that storage devices have and solutions to fix it'
+
+[Hardware.Work.Troubleshooting.Power]
+Name = 'Troubleshooting'
+Note = 'Problems that power supplies, and devices that administer power to devices have have and solutions to fix it'
+
+[Hardware.Work.Troubleshooting.Chassis]
+Name = 'Troubleshooting'
+Note = 'Problems that the chassis has and solutions to fix it'
+
+[Hardware.Work.Troubleshooting.Networking]
+Name = 'Troubleshooting'
+Note = 'Problems that networking devices have have and solutions to fix it'
+
+[Hardware.Work.Troubleshooting.Laptops]
+Name = 'Laptop Problems'
+Note = 'Problems that laptops have and solutions to fix it'
+
+[Hardware.Work.Troubleshooting.Laptops.Displays]
+Name = 'Laptops Display Problems'
+Note = 'Problems that laptop displays have and solutions to fix it'
+
+[Hardware.Work.Troubleshooting.Laptops.Displays.Backlight]
+Name = 'Laptops Display Backlight Problems'
+problem = 'The computer turn on but the display is not turning on'
+test = 'shine a light up to the display and look for any details, if you see anything then the backlight inverter has gone bad. If nothing shows then the flex cable may be loos or disconnected'
+solution = 'Either replace the inverter, or replace / connect the flex cable'
+
+[Hardware.Work.Troubleshooting.Laptops.Displays.Damage]
+Name = 'Laptops Display Damage'
+problem = 'Scratches on screen only in particular patterned areas'
+test = 'Look to see if the rubber bumpers have worn down, if the bumpers are fine then the customer is doing something wrong'
+solution = 'Replace the bumpers'
+problem2 = 'Cracked screen'
+test2 = 'Ask what happened'
+solution2 = 'Either replace the screen or get a new device'
+
+# end of laptops
+
+[Hardware.Work.Troubleshooting.Displays]
+Name = 'Troubleshooting'
+Note = 'Problems that _ have and solutions to fix it'
+
+# end of troubleshooting
+# end of work
+# end of hardware
+
+[Software]
+Name = 'Software'
+Note = 'The programs and applications that run on a computer system, controlling its operations and enabling specific tasks'
+
+[Software.OS]
+Name = 'Operating System'
+Note = ''
+
+[Software.OS.Windows]
+Name = 'Operating System'
+Note = 'Windows is a product line of proprietary graphical operating systems developed and marketed by Microsoft'
+
+[Software.OS.Windows.11]
+Name = 'Operating System'
+Note = ''
+
+[Software.OS.Windows.10]
+Name = 'Operating System'
+Note = ''
+
+[Software.OS.Windows.8]
+Name = 'Operating System'
+Note = ''
+
+[Software.OS.Windows.7]
+Name = 'Operating System'
+Note = ''
+
+[Software.OS.Windows.Vista]
+Name = 'Operating System'
+Note = ''
+
+# end of Windows
+
+[Software.OS.Mac]
+Name = 'Operating System'
+Note = ''
+
+# end of Mac
+
+[Software.OS.Linux]
+Name = 'Operating System'
+Note = ''
+
+# end of Linux
+
+[Software.OS.Chrome]
+Name = 'Operating System'
+Note = ''
+
+# end of Chrome
+# end of OS
+
+[Software.Database]
+Name = 'Database'
+Note = 'The process of organizing, storing, and retrieving data in a structured and efficient manner'
+
+# end of software
+
+[Networking]
+Name = 'Networking'
+Note = 'The infrastructure and protocols that allow computers and other devices to communicate and exchange data'
+
+[Networking.Cloud]
+Name = 'Cloud'
+Note = 'The delivery of computing resources over the internet, such as storage, processing power, and software'
+
+# end of networking
+
+[Security]
+Name = 'Security'
+Note = 'The practice of protecting an organizations IT assets from unauthorized access, data breaches, internal failures, and other malicious activity'
+
+[Security.Data]
+Name = 'Data'
+Note = 'Protecting stored data from breaches or internal failures'
+
+[Security.Data.Internal]
+Name = 'Internal'
+Note = 'Safety mechanisms to ensure that data is not lost or corrupted. It ensures that in the event of a failure that data can still be preserved'
+
+[Security.Data.Internal.Concepts]
+Name = 'Concepts'
+Note = 'Basic concepts and mechanisms within an internal protective system'
+
+[Security.Data.Internal.Concepts.Parity]
+Name = 'Parity'
+Note = 'A technique that uses extra bits to detect errors in data transmission and storage'
+
+[Security.Data.Internal.Concepts.Parity.Bit]
+Name = 'Parity Bit'
+Note = 'An extra bit added to a binary code to ensure data accuracy. The parity bits value is based on the number of ones in the data, and is set to make the total number of ones even or odd'
+
+[Security.Data.Internal.Concepts.Parity.Check]
+Name = 'Parity Check'
+Note = 'An error detection method that uses a parity bit to validate data and find errors. Parity check is also known as vertical redundancy check (VRC). The receiver counts the number of ones, including the parity bit, to determine if the transmission was error-free'
+
+[Security.Data.Internal.Concepts.Mirroring]
+Name = 'Mirroring'
+Note = 'A technique that creates an exact copy of data from one location to another in real-time. It ensures that if one device, or one set of devices fails, that there is another carbon copy of that data in another location. Individual devices, sets of devices, or even entire storage servers can utilizes mirroring'
+
+[Security.Data.Internal.Concepts.Striping]
+Name = 'Striping'
+Note = 'A technique that divides data into blocks and stores them across multiple physical devices'
+
+[Security.Data.Internal.RAID]
+Name = 'Redundant Array Of Independent Disks'
+Note = 'There are 6 levels of RAID, each providing there own unique benefits'
+
+[Security.Data.Internal.RAID.0]
+Name = '0'
+Note = 'Also known as a striped volume, this level splits data across multiple drives for speed, but does not provide data redundancy'
+
+[Security.Data.Internal.RAID.1]
+Name = '1'
+Note = 'Also known as mirroring, this level mirrors data across drives to provide fault tolerance and data safety. However, the RAIDs capacity is limited to the smallest hard drive'
+
+[Security.Data.Internal.RAID.5]
+Name = '5'
+Note = 'This level uses parity to check and correct errors, and is a common choice for its balance of performance and data redundancy'
+
+[Security.Data.Internal.RAID.6]
+Name = '6'
+Note = 'Similar to RAID 5, but with an extra parity block for increased reliability. This means that the array can survive if two drives fail simultaneously'
+
+[Security.Data.Internal.RAID.10]
+Name = '10'
+Note = 'Also known as RAID 1+0, this level combines mirroring and striping. It is a nested RAID, which means it combines two different RAID levels'
+
+[Security.Data.Internal.RAID.1E]
+Name = '1E'
+Note = 'A mirror made over an odd number of disks, this level uses striping to increase read speed'
+
+[Data]
+Name = 'Data'
+Note = 'Electric signals that represent a value (typically 1s and 0s) and can be computed to represent functions or definable things'
+
+[Data.Binary]
+Name = 'Binary'
+Note = 'Communicating information using 1s and 0s or on and off states'
+
+[Data.Binary.Unit]
+Name = 'Unit'
+Note = 'A measured quantity of binary information'
+
+[Data.Binary.Unit.Bit]
+Name = 'Bit'
+Note = 'The smallest unit of data and can either be represented by a 1 or 0.' 
+unit = 'The word "bit" is represented by a lowercase b'
+
+[Data.Binary.Unit.Byte]
+Name = 'Byte'
+Note = '8 bits = 1 byte'
+unit = 'The word "byte" is represented by an uppercase B'
+
+[Data.Communication]
+Name = 'Communication'
+Note = 'The way an electronic signal interacts with a medium like a wire or a light wave traveling through the air and into systems of machines'
+
+[Data.Communication.Method]
+Name = 'Communication Methods'
+Note = 'The method information is sent and received through a medium and into systems of machines'
+
+[Data.Communication.Method.Serial]
+Name = 'Serial'
+Note = 'Sending one bit of data at a time in the order they should be received'
+
+[Data.Communication.Method.Serial.Lane]
+Name = 'Lane'
+Note = 'Two serial wires that enable the sending and receiving of data simultaneously'
+
+[Data.Communication.Method.Parallel]
+Name = 'Parallel'
+Note = 'Sending out data through multiple wires in sync'
+
+[Data.Communication.Medium]
+Name = 'Medium'
+Note = 'The substance that is being used to send and receive information'
+
+# end of data

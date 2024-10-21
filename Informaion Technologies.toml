@@ -1,0 +1,1767 @@
+#Information Technologies
+# This is a study guide for information technologies. It aims to provide a comprehensive understanding of the big picture in an intuitive structure while providing specific details
+
+[Hardware]
+Name = 'Hardware'
+Note = 'The physical components of information technologies'
+Comment = ''
+
+[Hardware.Components]
+Name = 'Hardware Components'
+Note = 'The physical parts of a computer that allow it to function'
+Comment = ''
+
+[Hardware.Components.Chassis]
+Name = 'Chassis'
+Note = 'The main housing for the motherboard and most other components apart of the computer'
+Comment = ''
+
+[Hardware.Components.Chassis.Form]
+Name = 'Chassis Form Factor'
+Notes = 'The shape and orientation of the chassis'
+Comment = ''
+
+[Hardware.Components.Chassis.Form.All_In_One]
+Name = 'All In One'
+Notes = 'The monitor and the computer are apart of the same chassis'
+Comment = ''
+
+[Hardware.Components.Chassis.Form.Tower]
+Name = 'Tower'
+Notes = 'Made to stand vertical'
+Comment = ''
+
+[Hardware.Components.Chassis.Form.Tower.Full]
+Name = 'Full Sized'
+Notes = 'Typically 22 inch in hight and 6 - 10 assessable bays'
+Comment = ''
+
+[Hardware.Components.Chassis.Form.Tower.Mid]
+Name = 'Mid Sized'
+Notes = 'Typically 18 inch in hight and 2 - 4 assessable bays'
+Comment = ''
+
+[Hardware.Components.Chassis.Form.Tower.Mini]
+Name = 'Mini Sized'
+Notes = 'Typically 14 to 16 inch in hight and 1 - 2 assessable bays'
+Comment = ''
+
+[Hardware.Components.Chassis.Form.Flat]
+Name = 'Flat'
+Notes = 'Made to lay horizontal'
+Comment = ''
+
+[Hardware.Components.Chassis.Form.Desktop.Pizza]
+Name = 'Desktop'
+Notes = 'A desktop made to lay horizontal and about 1 to 2 inches high'
+Comment = ''
+
+[Hardware.Components.Chassis.Form.Desktop.Rackmount]
+Name = 'Rackmount Computer'
+Notes = 'A chassis frame made compatible for data racks'
+Comment = ''
+
+# End of Chassis Form Factor
+
+[Hardware.Components.Chassis.Layout]
+Name = 'Chassis Layout'
+Notes = 'The functionality of its shape and cutouts and how it relates to the functionality of the devices within the chassis. The chassis is made out of sheet metal for grounding. The front of the chassis has cutouts for things like power buttons, switches, reset buttons, and LEDs to indicate the status of different aspects of the computer. The back of the chassis may have many ports and peripheral connections'
+Comment = ''
+
+[Hardware.Components.Chassis.Layout.Motherboard]
+Name = 'Bays'
+Notes = 'Predrilled holes on the motherboard line up with the holes in the chassis to fasten the motherboard. The motherboard does not directly connect to the chassis and brass standoffs are used to provide a secure distance between the electrical components and the metal frame of the chassis'
+Comment = ''
+
+[Hardware.Components.Chassis.Layout.Intrusion]
+Name = 'Intrusion Detection'
+Notes = 'A device, typically a push button switch that attaches to the chassis and the motherboard, when the case is opened the switch changes position and it alerts the CMOS'
+Comment = 'This is not used as much anymore'
+
+[Hardware.Components.Chassis.Layout.Bays]
+Name = 'Bays'
+Notes = 'Many of the devices that sit in the chassis, like storage devices, sit in 5.25in or 3.5in bays. The devices will be fastened down to the chassis in the bays using screws'
+Comment = ''
+
+[Hardware.Components.Chassis.Layout.Air]
+Name = 'Airflow'
+Notes = 'There are dedicated areas of the chassis to allow air to flow in and out. These areas allow fans to be fastened to to the frame of the chassis. The chassis is designed to have a lot of open space to allow air to flow and be carried out'
+Comment = ''
+
+# End of Chassis Layout
+# End of Chassis
+
+[Hardware.Components.Motherboard]
+Name = 'Motherboard'
+Note = 'circuit board containing the principal components of a computer or other device, with connectors into which other circuit boards can be slotted'
+Comment = ''
+
+[Hardware.Components.Motherboard.Form]
+Name = 'Form Factor'
+Note = 'The size and shape of the motherboard and how it relates to the components that can fit on it, larger the motherboard the more things you can fit on it and the better capability for more powerful devices'
+Comment = ''
+
+[Hardware.Components.Motherboard.Form.ATX]
+Name = 'Advanced Technology Extended'
+Note = 'Very common and most popular model'
+Comment = 'RAM and expansion slots are perpendicular to each other'
+Measurement = '12in width by 9.6in depth'
+
+[Hardware.Components.Motherboard.Form.MATX]
+Name = 'Micro ATX'
+Note = 'Same as atx but used for smaller computers and able to connect to the ATX model'
+Comment = 'Smaller than ATX but backwards compatible'
+Measurement = '9.6in width by 9.6in depth'
+
+[Hardware.Components.Motherboard.Form.ITX]
+Name = 'Nobody Knows What It Stands For'
+Note = 'Comes in mini, nano, and pico sises and good for power efficiency and commonly used in places that do not need much computation'
+Comment = 'For HTPCs, UMPCs, and smart phones'
+Measurement = '60nm width to 6.7in depth'
+
+[Hardware.Components.Motherboard.Form.BTX]
+Name = 'Balanced TX'
+Note = 'High load, high efficiency, and generates a lot of heat'
+Comment = 'RAM slots and expansion slots are parallel to each other'
+Measurement = '12.8in width to 10.5in depth'
+
+# End of Motherboard Form Factor
+
+[Hardware.Components.Motherboard.Components]
+Name = 'Motherboard Components'
+Note = 'Components that are built into or fit into the motherboard'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.CPU]
+Name = 'Central Processing Unit'
+Note = 'The primary hardware component of a computer that controls and processes data and instructions'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.CPU.Memory_Controller]
+Name = 'Memory Controller'
+Note = 'Allocates the information needed by the CPU from the RAM'
+Comment = 'This is almost always built onto the CPU'
+
+[Hardware.Components.Motherboard.Components.CPU.Cache]
+Name = 'Cache'
+Note = 'Temporary holding area for memory on its way to the cpu. Comprised of L1 2 and 3, L1 being the fastest and L3 being the slowest. One having direct connection with the cpu and three having connection with the main memory bus'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.CPU.Hyperthreading]
+Name = 'Hyperthreading'
+Note = 'Allows a single cpu to accept and process two independent sets of instructions'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.CPU.Multicore]
+Name = 'Multicore'
+Note = 'Having more than one core so that it can process from mutable points of entry or it can subdivide a task'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.CPU.Architecture]
+Name = 'Bit Architecture'
+Note = '64 allows for the CPU to process high ranges of data (around 16 exabytes) while 32 bit is limited to 4gb of data. The software must also support 64 bit as well. Also referred to as x86 or x64'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.CPU.Socket]
+Name = 'CPU Socket'
+Note = 'The CPUs attachment method to the motherboard'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.CPU.Socket.ZIF]
+Name = 'Zero Insertion Force'
+Note = 'Invented to avoid any issues when installing a cpu. A little lever pushes the cpu into place with the correct orientation so that all of the pins fit in correctly without any bending'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.CPU.Socket.PGA]
+Name = 'Pin Grid Array'
+Note = 'Pins are arranged in a square shape on the cpu, in a regular array on the underside allowing for more pins per circuit'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.CPU.Socket.LGA]
+Name = 'Land Grid Array'
+Note = 'Pins are on the socket instead of the cpu'
+Comment = ''
+
+# End of CPU
+
+[Hardware.Components.Motherboard.Components.GPU]
+Name = 'Graphics Processing Unit'
+Note = 'Carries out simple computation at a fast rate. Most graphics are simple to compute but numerous, the GPU is able to solve those easy problems fast'
+Comment = ''
+
+# End of GPU
+
+[Hardware.Components.Motherboard.Components.RAM]
+Name = 'Random Accesses Memory'
+Note = 'Short term information that is able to be accessed at a fast rate but in low volume'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.RAM.SRAM]
+Name = 'Static RAM'
+Note = 'Data is stored as a static image until the image is removed. This method is very fast but not scalable meaning you can not store large images onto the SRAM'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.RAM.DRAM]
+Name = 'Dynamic RAM'
+Note = 'Data the at needs to be refreshed consistently, each bit is stored on separate capacitors, this is slower but simpler in design and more scalable meaning it can store more information. DRAM usually comes in sticks that are able to be added replaced or removed'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.RAM.DRAM.SIMM]
+Name = 'Single In Line Memory Module'
+Note = 'Most popular form of dram in the mid 90s, 32 bit data path and the contacts on either side of the stick are redundant. You would need to buy two of them to support 64 bit architecture'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.RAM.DRAM.DIMM]
+Name = 'Dual In Line Memory Module'
+Note = 'The current more popular form of memory on the market, separate electrical contacts on either side of the stick, 64 bit data path'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.RAM.DRAM.DIMM.SDRAM]
+Name = 'Synchronous Dram'
+Note = 'Synchronized to the system bus (mother board clock) the SDRAM waits for the clock signal before processing a command. allows the chip to process command while accepting others, this is called pipelining'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.RAM.DRAM.DIMM.SDRAM.DDR]
+Name = 'Double data rate'
+Note = 'Processes data on the rising and falling transformation of the clock'
+Comment = ''
+Measurement = '2.5v | 400Mb/s data rate | 3.2GB/s bandwidth | 1GB capacity | 184 pins'
+
+[Hardware.Components.Motherboard.Components.RAM.DRAM.DIMM.SDRAM.DDR.2]
+Name = 'Version 2'
+Note = ''
+Comment = ''
+Measurement = '1.8v | 800Mb/s data rate | 6.4GB/s bandwidth | 4GB capacity | 240 pins'
+
+[Hardware.Components.Motherboard.Components.RAM.DRAM.DIMM.SDRAM.DDR.3]
+Name = 'Version 3'
+Note = ''
+Comment = ''
+Measurement = '1.5v | 2133Mb/s data rate | 17GB/s bandwidth | 8GB capacity | 240 pins'
+
+[Hardware.Components.Motherboard.Components.RAM.DRAM.DIMM.SDRAM.DDR.4]
+Name = 'Version 4'
+Note = ''
+Comment = ''
+Measurement = '1.2v | 3200Mb/s data rate | 25.6GB/s bandwidth | 32GB capacity | 288 pins'
+
+[Hardware.Components.Motherboard.Components.RAM.DRAM.DIMM.SDRAM.DDR.5]
+Name = 'Version 5'
+Note = ''
+Comment = ''
+Measurement = '1.1v | 51200Mb/s data rate | 51.2GB/s bandwidth | 128GB capacity | 288 pins'
+
+# End of DDR
+# End of SDRAM
+# End of DIMM
+
+[Hardware.Components.Motherboard.Components.RAM.DRAM.SODIMM]
+Name = 'Small outline DIMM'
+Note = 'About half the size of regular DIMMs, used for smaller spaces'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.RAM.DRAM.RDRAM]
+Name = 'Rambus DRAM'
+Note = 'Designed to replace DIMM SDRAM before DDR but failed' 
+Comment = 'Bro took the L'
+
+# End of DRAM
+
+[Hardware.Components.Motherboard.Components.RAM.ROM]
+Name = 'Read Only Memory'
+Note = 'As the name implies, the ROM is only meant to be read from and not written to. You can write to it by flashing it like with the bios'
+
+[Hardware.Components.Motherboard.Components.RAM.Latency]
+Name = 'Memory Latency'
+Note = 'Also known as the column address strobe latency, this is the delay between the memory controller requesting data, and the data availability. The lower the latency the better. Measured in nanoseconds but with RAM its measured in clock cycles'
+
+[Hardware.Components.Motherboard.Components.RAM.Multichannel_Architecture]
+Name = 'Multichannel Architecture'
+Note = 'Adds more channels of communication between DRAM and memory controller. Sticks are installed in matching banks on the motherboard'
+
+[Hardware.Components.Motherboard.Components.RAM.Multichannel_Architecture.Single]
+Name = 'Single Channel'
+Note = '64 bit'
+
+[Hardware.Components.Motherboard.Components.RAM.Multichannel_Architecture.Dual]
+Name = 'Dual Channel'
+Note = '128 bit'
+
+[Hardware.Components.Motherboard.Components.RAM.Multichannel_Architecture.Triple]
+Name = 'Triple Channel'
+Note = '192 bit'
+
+[Hardware.Components.Motherboard.Components.RAM.Multichannel_Architecture.Quad]
+Name = 'Quadruple Channel'
+Note = '256 bit'
+
+# End of Multichannel Architecture
+
+[Hardware.Components.Motherboard.Components.RAM.Single_Sided]
+Name = 'Single Sided'
+Note = 'Single sided chips have one bank on them an offers a higher density of data'
+
+[Hardware.Components.Motherboard.Components.RAM.Double_Sided]
+Name = 'Double Sided'
+Note = 'Double sided have two banks on the stick, a computer can only access one bank at a time so it is important to have the more important data on one side of the chip'
+
+[Hardware.Components.Motherboard.Components.RAM.Registered_Memory]
+Name = 'Registered Memory'
+Note = 'Also called buffered memory, it is an in-between of the RAM and the memory controller. It provides integrity to the signal'
+
+# End of Ram
+
+[Hardware.Components.Motherboard.Components.Clock]
+Name = 'Clock'
+Note = 'A device that generates a periodic signal used to synchronize the operations of various components in a computer system'
+Comment = 'It is almost standard to have the clock built into the CPU'
+
+[Hardware.Components.Motherboard.Components.Clock.Quartz]
+Name = 'Quartz Clock'
+Note = 'A piezoelectric crystal that vibrates at a precise frequency when an electric current is applied to it, used as a timekeeping element in clocks'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.Clock.Analog]
+Name = 'Analog converter'
+Note = 'A circuit that converts an analog signal (such as the vibration of a quartz crystal) into a digital signal'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.Clock.Frequency]
+Name = 'Frequency'
+Note = 'The number of clock cycles per second, measured in hertz (Hz)'
+Comment = ''
+Unit = 'Measured in hertz (Hz)'
+
+[Hardware.Components.Motherboard.Components.Clock.Overclocking]
+Name = 'Overclocking'
+Note = 'The process of increasing the clock frequency beyond its rated speed, which can improve performance but also increase heat and instability'
+Comment = ''
+
+# End of Clock
+
+[Hardware.Components.Motherboard.Components.BIOS]
+Name = 'Basic Input Output System'
+Note = 'The BIOS is the firmware that controls a computers hardware during the boot process. Its the first software to run when a computer is powered on. The BIOS bridges the gap between the operating system and the hardware components'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.BIOS.CMOS]
+Name = 'Complementary Metal Oxide Semiconductor'
+Note = 'Stores essential system settings like time, date, and boot order'
+Comment = 'Powered by a small battery to retain settings even when the computer is off'
+
+[Hardware.Components.Motherboard.Components.BIOS.CMOS.Battery]
+Name = 'Battery'
+Note = 'Prevents the CMOS from loosing power'
+Comment = 'If this battery dies you can loose the information in the CMOS'
+
+[Hardware.Components.Motherboard.Components.BIOS.POST]
+Name = 'Power On Self Test'
+Note = 'The first step in the boot process. It will detect errors on to the BIOS using code number or audio beeps in the case that the monitor does not work. It tells the user if there are any problems with the computer'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.BIOS.Flash_BIOS]
+Name = 'Flashing bios'
+Note = 'The process of updating the firmware that controls a computers hardware'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.BIOS.Configure_BIOS]
+Name = 'BIOS Configuration'
+Note = 'An option panel that allows you alter some of the information that is stored on the CMOS'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.BIOS.Configure_BIOS.Time_Date]
+Name = 'CMOS Time And Date'
+Note = 'Time and date is kept running by the CMOS battery. if the battery dies the date and time will constantly reset'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.BIOS.Configure_BIOS.Priority]
+Name = 'Boot device priority'
+Note = 'Gives priority to the OS that should be booted then it can load other drives'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.BIOS.Configure_BIOS.Password]
+Name = 'Bios Password'
+Note = 'Sets a password to alter the information in the BIOS'
+Comment = 'This information can be reset if you remove the battery in the CMOS'
+
+[Hardware.Components.Motherboard.Components.BIOS.Configure_BIOS.Virtualization]
+Name = 'Virtualization'
+Note = 'Multiple computers virtualized by the hardware. only works if the bios supports it. It works by dividing the tasks of the components in the hardware and hosting it to a virtual session'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.BIOS.Configure_BIOS.WOL]
+Name = 'Wake On Local Area Network'
+Note = 'allows the computer to be "woken up" though a network message'
+Comment = ''
+
+[Hardware.Components.Motherboard.Components.BIOS.Configure_BIOS.Monitoring]
+Name = 'Bios Monitoring'
+Note = 'The bios will monitor and process information about the hardwares function such as temperatures, performance, fan speeds, intrusion detections, voltage, and clock speeds in hz'
+Comment = ''
+
+# End of BIOS Configuration
+# End of BIOS
+
+[Hardware.Components.Motherboard.Components.Cards]
+Name = 'Cards'
+Note = 'An expansion card, also known as an expansion board, adapter card, peripheral card, or accessory card, is a printed circuit board (PCB) that can be inserted into an electrical connector or expansion slot on a computers motherboard to add functionality to a computer system'
+Comment = ''
+
+# End of Motherboard Components
+# End of Motherboard
+
+[Hardware.Components.Cooling]
+Name = 'Cooling'
+Note = 'Mechanisms to cool components of a computer'
+Comment = ''
+
+[Hardware.Components.Cooling.Sink]
+Name = 'Heat Sink'
+Note = 'A metal block that has thin groves and blades. Heat travels through the metal and onto the thin blades. The surface area from the blades allows heat to easily be carried away'
+Comment = ''
+
+[Hardware.Components.Cooling.Sink.Paste]
+Name = 'Thermal Paste'
+Note = 'Bridges the connection of the heat sink to the component. It fills in the space that air bubbles might occupy and it is thermally conductive, allowing adequate heat transfer from the component to the heat sink'
+Comment = ''
+
+[Hardware.Components.Cooling.Fan]
+Name = 'Fan Cooling'
+Note = 'Multiple fans are places throughout the chassis to carry out hot air and bring in cool air'
+Comment = 'You have intake fans and outtake fans'
+
+[Hardware.Components.Cooling.Liquid]
+Name = 'Liquid Cooling'
+Note = 'Using specially designed systems to pump water throughout tubes and onto cooling blocks that attach to components in computer'
+Comment = ''
+
+[Hardware.Components.Cooling.Submersion]
+Name = 'Submersion Cooling'
+Note = 'Submersing the entire motherboard into a safe non conductive liquid'
+Comment = 'This is the most effective type of cooling however it is very very expensive and requires a lot of maintenance'
+
+# End of Cooling
+
+[Hardware.Components.Bus]
+Name = 'Bus'
+Note = 'An electronic pathway through which data can be transferred'
+
+[Hardware.Components.Bus.North]
+Name = 'North Bridge Chipset Bus'
+Note = 'The north bridge is the area of the motherboard that contains the major computational components. The northbridge chipset buses are buses that are used within the north bridge'
+Comment = ''
+
+[Hardware.Components.Bus.North.Front]
+Name = 'Front Side Bus'
+Note = 'Connecting the CPU and the north bridged together'
+Comment = ''
+
+[Hardware.Components.Bus.North.Graphics]
+Name = 'High Speed Graphics Bus'
+Note = 'Connects the GPU with the northbridge'
+Comment = ''
+
+[Hardware.Components.Bus.North.MBUS]
+Name = 'Memory Bus'
+Note = 'Connects the north bridge to the RAM'
+Comment = ''
+
+[Hardware.Components.Bus.South]
+Name = 'South Bridge Chipset Bus'
+Note = 'Buses that connect to the south bridge'
+Comment = ''
+
+[Hardware.Components.Bus.South.DMI]
+Name = 'Direct media interface'
+Note = 'Connects the north and south bridge together'
+Comment = ''
+
+# End of North and South Bridge Chipset Bus
+
+[Hardware.Components.Bus.USB]
+Name = 'Universal Serial Bus'
+Note = 'A widely used bus standard for connecting peripherals. It is a versatile and easy-to-use interface that has become ubiquitous in modern computing. USB has evolved over several generations, offering increasing speeds and capabilities'
+Comment = 'Used for keyboards, mice, printers, flash drives, external storage devices'
+
+[Hardware.Components.Bus.USB.2]
+Name = 'Version'
+Note = 'Older method of USB'
+Comment = ''
+
+[Hardware.Components.Bus.USB.3]
+Name = 'Version 3 and 3.1'
+Note = 'Compatible with USB 2 ports. The most modern version and fastest transfer rates, colored blue to indicate its version 3'
+Comment = ''
+
+[Hardware.Components.Bus.USB.USBA]
+Name = 'Type A'
+Note = 'Most common bus standard but it is being seceded by type c'
+Comment = ''
+
+[Hardware.Components.Bus.USB.USBB]
+Name = 'Type B'
+Note = 'Mostly used for larger devices like printers and is still used quite often'
+Comment = ''
+
+[Hardware.Components.Bus.USB.USBB_Mini_Micro]
+Name = 'Type B Mini And Micro'
+Note = 'Not used that often'
+Comment = ''
+
+[Hardware.Components.Bus.USB.USBC]
+Name = "USB Type C"
+Note = 'Most modern method ot connect external devices and can be used for transporting data and power transmission, it can also be flipped either way to terminate it'
+Comment = ''
+
+# end of USB
+
+[Hardware.Components.Bus.Lighting]
+Name = 'Lighting Port'
+Note = 'Used by and for Apple devices only'
+Comment = 'This is starting to become phased out because of regulations requiring USBC as the standard. That and the consumers prefer USBC over lighting'
+
+[Hardware.Components.Bus.Thunderbolt]
+Name = 'Thunderbolt'
+Note = 'A high-speed serial bus standard made by apple that combines the features of PCIe and DisplayPort. It offers even faster data transfer rates than FireWire, making it suitable for connecting external graphics cards, high-performance storage devices, and docking stations'
+Comment = 'Used for external graphics cards, high-performance storage devices, docking stations'
+
+[Hardware.Components.Bus.SATA]
+Name = 'Serial Advanced Technology Attachment'
+Note = 'A serial interface for connecting storage devices. It offers faster data transfer rates and hot-swapping capabilities than its predecessor, PATA/IDE'
+Comment = 'Hard drives, SSDs'
+Measurement = 'Up to 300 MB/s | 7 pins | 1 device per cable (channel) | sometimes power over cable if it does not it uses Molex'
+
+[Hardware.Components.Bus.IDE]
+Name = 'Integrated Drive Electronics'
+Note = 'Aka PATA, an older parallel bus standard for connecting storage devices. It was once the most common interface for connecting storage devices, but it has been largely supplanted by SATA due to its limitations in speed and scalability. It was used for hard drives, optical drives. You can have up to two devices using Pata, a device can either be the master or the slave (also called primary and secondary). The priority status of the drive can be configured by either covering or closing a set of pins set on the drive'
+Comment = ''
+Measurement = 'Up to 133 Mb/s | 40 pin cable | 2 devices per cable | commonly BERG power or Molex, sometimes an all in one PATA connector doing power and data'
+
+[Hardware.Components.Bus.PCIE]
+Name = 'Peripheral Component Interconnect Express'
+Note = 'A high-speed serial bus standard for expansion cards. It offers faster data transfer rates than its predecessor, PCI, and is the most common bus standard for connecting high-performance devices'
+Comment = 'Graphics cards, sound cards, network adapters, storage controllers'
+Measurement = 'Serial | 1 - 16 full duplex lanes'
+
+[Hardware.Components.Bus.PCI]
+Name = 'Peripheral Component Interconnect'
+Note = 'Older of PCIE'
+Comment = ''
+Measurement = '32 bit'
+
+[Hardware.Components.Bus.AGP]
+Name = 'Accelerated graphics port'
+Note = 'Used for graphic cards'
+Comment = ''
+Measurement = '32 bit'
+
+[Hardware.Components.Bus.ISA]
+Name = 'Industry Standard Architecture'
+Note = 'Very old expansion slot, not used anymore'
+Comment = ''
+
+[Hardware.Components.Bus.AMR]
+Name = "Audio Modem Riser"
+Note = 'Used for processing sounds, including sounds that can be produced by modems'
+Comment = ''
+
+[Hardware.Components.Bus.PCMCIA]
+Name = 'Personal Computer Memory Card International Association'
+Note = 'Outdated model commonly used and could fit on the side of a laptop replaced by the USB'
+Comment = ''
+
+[Hardware.Components.Bus.DVI]
+Name = 'Digital Visual Interface'
+Note = 'Usually colored white, used for monitor graphics'
+Comment = ''
+
+[Hardware.Components.Bus.HDMI]
+Name = 'High-Definition Multimedia Interface'
+Note = 'Used for hd video and audio'
+Comment = ''
+
+[Hardware.Components.Bus.HDMI.Mini]
+Name = 'High-Definition Multimedia Interface Mini'
+Note = 'Used for hd video but not audio'
+Comment = ''
+
+[Hardware.Components.Bus.Display_Port]
+Name = 'Display Port'
+Note = 'Another standard that is used for video because HDMI requires a royalty to be payed and display port does not'
+Comment = 'Used because HDMI requires a royalty to be payed and display port does not'
+
+[Hardware.Components.Bus.Optical_Audio]
+Name = 'Optical audio'
+Note = 'Digital instead of analog data to transmit audio information'
+Comment = ''
+
+[Hardware.Components.Bus.eSATA]
+Name = 'External SATA'
+Note = 'A way to hook up an external hard drive'
+Comment = ''
+
+[Hardware.Components.Bus.SCSI]
+Name = 'Small Computer System Interface'
+Note = 'A high-performance bus standard for connecting storage devices and other peripherals. It offers faster data transfer rates and more advanced features than IDE or SATA, making it well-suited for demanding applications like video editing and scientific computing. Because you can fit up to 16 devices each device will get its own address assigned by the computer'
+Comment = 'Used for storage devices, RAID arrays, high-performance peripherals. Because you can fit up to 16 devices each device will get its own address assigned by the computer'
+
+[Hardware.Components.Bus.FireWire]
+Name = 'FireWire'
+Note = 'A high-bandwidth bus standard for connecting digital video cameras and other peripherals. It offers high data transfer rates and low latency, making it ideal for real-time applications like video capture and editing'
+Comment = 'Used for digital video cameras, high-performance peripherals'
+
+# End of Bus
+
+[Hardware.Components.Storage]
+Name = 'Storage'
+Note = 'The methods of storing information in a non volatile manner on a device'
+Comment = ''
+
+[Hardware.Components.Storage.Magnetic]
+Name = 'Magnetic Storage'
+Note = 'Information is stored in a magnetic responsive material. A write head will alter the magnetic signal on the material and a read head will observe the magnetic signal and output it as an electronic signal'
+Comment = ''
+
+[Hardware.Components.Storage.Magnetic.HDD]
+Name = 'Hard Disk Drives'
+Note = 'Contains multiple hard disks and a read write head. Also contains onboard DRAM and can be both internal and external device'
+Comment = '3.5 inch, can use SATA, PATA or SCSI, can usually store GB or TB, 7200 or 5400 RPM'
+
+[Hardware.Components.Storage.Magnetic.FDD]
+Name = 'Floppy Disk Drive'
+Note = 'Used to be one of the only form of removable media. Non existent today but may be needed to access older data. Some computers used to run entirely off of floppy. when you boot of a system with a floppy dive your system may show'
+Comment = '3.5 inch, 34-pin data cable, berg power connection'
+
+[Hardware.Components.Storage.Magnetic.Tape]
+Name = 'Tape Drives'
+Note = 'Very slow and used for archival data storage using magnetic data strips. Both internal and external device and require a special driver'
+Comment = ''
+
+# End of Magnetic Storage
+
+[Hardware.Components.Storage.Optical]
+Name = 'Optical Storage'
+Note = 'A laser will engrave information onto a malleable disc, another laser can observe the engraved surface and output the topology as a digital signal'
+Comment = ''
+Unit = 'Recording speed measured in (x) which is 150 kb/s'
+
+[Hardware.Components.Storage.Optical.ROM]
+Name = 'Read Only Optical Memory'
+Note = 'When the information is written onto the medium it can not be changed or rewritten and is read only'
+Comment = ''
+
+[Hardware.Components.Storage.Optical.R]
+Name = 'Read / Write Optical Memory'
+Note = 'You can read and write on the disc but you can not rewrite already written information'
+Comment = ''
+
+[Hardware.Components.Storage.Optical.RW]
+Name = 'Write And Rewrite'
+Note = 'You can read, write and rewrite information on the disc. It is very expensive and not commonly used'
+Comment = ''
+
+[Hardware.Components.Storage.Optical.Layers]
+Name = 'Disc Layers'
+Note = 'Information can be encoded and read on either single or multiple layers on the disc allowing for more data to be stored'
+Comment = 'A one layer DVD allows for about 4.7 gb'
+
+[Hardware.Components.Storage.Optical.Sides]
+Name = 'Disc Sides'
+Note = 'Each side of the disc is encoded differently'
+Comment = ''
+
+[Hardware.Components.Storage.Optical.CD]
+Name = 'Compact disc'
+Note = '1x speed, up to 700 MB data or 80 minutes of audio. Uses PATA or SATA and can have audio outputs. Fits in a 5 1/4 inch bay'
+Comment = ''
+
+[Hardware.Components.Storage.Optical.DVD]
+Name = 'Digital versatile discs'
+Note = 'Reads at 16x and you need DVD software to use properly'
+Comment = ''
+
+[Hardware.Components.Storage.Optical.Blue_Ray]
+Name = 'Blue ray'
+Note = 'Replaced the DVD, 1x to 12x speeds, holds up to 25 GB per layer. Connects using SATA and is backwards compatible with CDs and DVDs. Must have correct software'
+Comment = ''
+
+# End of Optical Storage
+
+[Hardware.Components.Storage.Solid_State]
+Name = 'Solid state storage'
+Note = 'Data stored in methods more closely resembling RAM. It uses integrated circuits with no moving parts making it consume less power and fewer chances of failure but it the cost of decreased storage'
+Comment = ''
+
+[Hardware.Components.Storage.Solid_State.USB]
+Name = 'USB Flash Drives'
+Note = 'Portable handheld device used for small space storage. Usually connects using USB'
+Comment = ''
+
+[Hardware.Components.Storage.Solid_State.SD]
+Name = 'Secure Digital Cards'
+Note = 'Uses USB technology in a special form factor and is typically used in small portable devices. Regular has a 2GB limit, High capacity has 32 GB limit, and eXtended as a 2TB limit'
+Comment = 'the word Class determines the transfer rate, some devices require specific class'
+
+[Hardware.Components.Storage.Solid_State.Compact_Flash]
+Name = 'Compact Flash'
+Note = 'Comes in type 1 which is 3.3mm and type 2 which is 2.5mm. Higher capacity at 137 GB and typically not meant to be removable'
+Comment = ''
+
+# End of Solid State Storage
+# End of Storage
+
+[Hardware.Components.Power]
+Name = 'Power'
+Note = 'The way in which devices are powered'
+Comment = ''
+
+[Hardware.Components.Power.Concepts]
+Name = 'Electrical Concepts'
+Note = 'How electricity works as it related to information technologies'
+Comment = ''
+
+[Hardware.Components.Power.Concepts.Charge]
+Name = 'Electrical Charge'
+Note = 'If an atom has more electrons than protons, it has a negative charge, and if it has fewer electrons than protons, it has a positive charge; like charges repel each other, while unlike charges attract each other. Positively charged things natural pull in the negative charge creating a flow'
+Comment = ''
+
+[Hardware.Components.Power.Concepts.Voltage]
+Name = 'Voltage'
+Note = 'The electrical potential energy and the measure of pressure needed to move a charge against the forces that keep charges balanced.voltage coming into a house is typically 120v with two passes, having a potential combined voltage of 240'
+Comment = ''
+
+[Hardware.Components.Power.Concepts.Amperage]
+Name = 'Amperage'
+Note = 'The volume of electrical charge passing through at any point in time'
+Comment = ''
+
+[Hardware.Components.Power.Concepts.Wattage]
+Name = 'Wattage'
+Note = 'The pressure and volume that an electrical charge travels. calculated as amperage x voltage'
+Comment = ''
+
+[Hardware.Components.Power.Concepts.Impedance]
+Name = 'Impedance'
+Note = 'Also called resistance, is the opposition force against voltage and it restricts the flow of electrical charge. Measured in Ohms'
+Comment = ''
+
+[Hardware.Components.Power.Concepts.AC]
+Name = 'Alternating Current'
+Note = 'The direction of the current of electrical charge alternates at a set frequency and it allows for the ability to adjust the balances between voltage and amperage using a device'
+Comment = ''
+
+[Hardware.Components.Power.Concepts.DC]
+Name = 'Direct Current'
+Note = 'Current flows from negative charge to positive charge without any alternation of the direction of flow, mostly used within electrical devices'
+Comment = ''
+
+[Hardware.Components.Power.Concepts.Grounding]
+Name = 'Grounding'
+Note = 'Charges are naturally attracted to ground, wires connected to grounding rods provide this path to ground'
+Comment = ''
+
+# End of Electrical Concepts
+
+[Hardware.Components.Power.Issues]
+Name = 'Electrical Issues'
+Note = 'Electrical abnormalities that can effect electric devices'
+Comment = ''
+
+[Hardware.Components.Power.Issues.Surge]
+Name = 'Surge'
+Note = 'Influx of voltage that can damage or destroy a device'
+Comment = ''
+
+[Hardware.Components.Power.Issues.Spike]
+Name = 'Spike'
+Note = 'Very short and momentary increase of voltage'
+Comment = ''
+
+[Hardware.Components.Power.Issues.Sag]
+Name = 'Sag'
+Note = 'Very short and momentary decrease of voltage'
+Comment = ''
+
+[Hardware.Components.Power.Issues.Brownout]
+Name = 'Brownout'
+Note = 'A long term drop in voltage'
+Comment = ''
+
+[Hardware.Components.Power.Issues.Blackout]
+Name = 'Blackout'
+Note = 'Compleat loss of power usually followed by a spike of power when the power comes back on'
+Comment = ''
+
+# End of Electrical Issues
+
+[Hardware.Components.Power.Devices]
+Name = 'Power Distribution Devices'
+Note = 'Devices that provide, protect, and alter the electricity information technologies need'
+Comment = ''
+
+[Hardware.Components.Power.Devices.Supply]
+Name = 'Power Supply Unit'
+Note = 'Converts AC to DC and supplies power to every component inside the computer. The device typically has an on off switch and a switch to adapt to different countries voltages. Range from 300 to 1000W'
+Comment = ''
+
+[Hardware.Components.Power.Devices.Protective]
+Name = 'Protective'
+Note = 'A piece of equipment that protects a device from the potential danger of electrical spikes, sags, surges, brownouts, and blackouts'
+
+[Hardware.Components.Power.Devices.Protective.Surge_Protectors]
+Name = 'Surge Protectors'
+Note = 'A device that provides a steady current to avoid surges and spikes. It works by using a metal filament called a metal oxide varistor or MOV, it restricts the flow of voltage within a steady range and any access voltage gets returned to ground. They can either be installed directly into the electric panel or it can be plugged into the wall before other electrical devices. Surge protectors can also be built into electrical devices themselves'
+Comment = ''
+
+[Hardware.Components.Power.Devices.UPS]
+Name = 'Uninterruptible power supply'
+Note = 'A piece of equipment that protects a device from all potential problems and provides a consistently steady flow of electricity. It contains a surge protector and a backup battery during a brownout or blackout'
+Comment = ''
+
+[Hardware.Components.Power.Devices.Distributors]
+Name = 'Distributors'
+Note = 'A piece of equipment that distributes electricity from an outlet or hardwired source to multiple locations'
+Comment = ''
+
+[Hardware.Components.Power.Devices.Distributors.Strips]
+Name = 'Power strips'
+Note = 'A plug in method to daisy chain the power from one outlet into many more on a stick. Usually contains a 10 to 15 amp breaker to avoid overdraw'
+Comment = ''
+
+[Hardware.Components.Power.Devices.Distributors.Rackstrips]
+Name = 'Rackmount power strips'
+Note = 'A power strip built into or adapted to be mounted in a data rack'
+Comment = ''
+
+[Hardware.Components.Power.Devices.Connectors]
+Name = 'Power Supply Connectors'
+Note = 'Power cables going from the power supply to the devices'
+Comment = ''
+
+[Hardware.Components.Power.Devices.Connectors.Molex]
+Name = 'Molex'
+Note = 'Used to power IDE / PATA'
+Comment = ''
+
+[Hardware.Components.Power.Devices.Connectors.Berg]
+Name = 'Berg'
+Note = 'Used to power floppy drives'
+Comment = ''
+
+[Hardware.Components.Power.Devices.Connectors.SATA]
+Name = 'SATA'
+Note = 'Used to power SATA'
+Comment = ''
+
+[Hardware.Components.Power.Devices.Connectors.PCI-e]
+Name = 'PCI-e'
+Note = 'Used to power PCI-a devices (graphics)'
+Comment = ''
+
+# End of Power Connectors
+# End of Power Distribution Devices
+# End of Power
+# End of Hardware Components
+
+[Hardware.Computers]
+Name = 'Computers'
+Note = ''
+Comment = ''
+
+[Hardware.Computers.Laptops]
+Name = 'Laptops'
+Note = 'Portable computers that are foldable like a book'
+Comment = ''
+
+[Hardware.Computers.Laptops.RAM]
+Name = 'Laptop RAM'
+Note = 'Laptops typically use SO-DIMM cards or small outline memory modules. Newer computers are now having the RAM directly integrated into the board'
+Comment = ''
+
+[Hardware.Computers.Laptops.CPU]
+Name = 'Laptop CPU'
+Note = 'Most are integrated and cannot be removed'
+Comment = ''
+
+[Hardware.Computers.Laptops.GPU]
+Name = 'GPU'
+Note = 'GPUs are typically integrated into the motherboard or into the CPU because there is not much space to fit card based devices'
+Comment = ''
+
+[Hardware.Computers.Laptops.Ports]
+Name = 'Ports'
+Note = 'Ports are located on the lower, sitting section of the computer, they contain the same port standards as regular standing computer. Older laptops used to contain many ports with a wide variety but now there are typically a just a few USB ports'
+Comment = ''
+
+[Hardware.Computers.Laptops.Keyboard]
+Name = 'Keyboards'
+Note = 'Its a keyboard, its built it, yup'
+Comment = ''
+
+[Hardware.Computers.Laptops.Keyboard.Layout]
+Name = 'Layout'
+Note = 'There are a few shapes and standards for the keyboard. Some keyboards have number pads on the right hand side and some have them shared with the letters, using the function numlock command will activate the number pad. The function abilities vary between keyboard so you should be familiar with what your keyboards are capable of'
+Comment = ''
+
+[Hardware.Computers.Laptops.Keyboard.Connector]
+Name = 'Connector'
+Note = 'Connects using a flex cable connector'
+Comment = ''
+
+[Hardware.Computers.Laptops.Pointing_Devices]
+Name = 'Pointing Devices'
+Note = 'Allows you to move the mouse using a device on the laptop'
+Comment = ''
+
+[Hardware.Computers.Laptops.Pointing_Devices.Trackpad]
+Name = 'Trackpad'
+Note = 'A pad that senses touch to move the mouse and buttons to command the mouse'
+Comment = ''
+
+[Hardware.Computers.Laptops.Pointing_Devices.Eraserhead]
+Name = 'Eraserhead'
+Note = 'Also called trackpoint, it is motion sensitive and will move the mouse in the direction you push it. Some models allow you to click the mouse. Like a joystick'
+Comment = ''
+
+[Hardware.Computers.Laptops.Pointing_Devices.Stylus]
+Name = 'Stylus'
+Note = 'A pen that allows you to interact with the screen of the laptop or a separate tablet pad'
+Comment = ''
+
+[Hardware.Computers.Laptops.Display]
+Name = 'Laptop Display'
+Note = 'Portable computers that are foldable like a book'
+Comment = ''
+
+[Hardware.Computers.Laptops.Display.LCD]
+Name = 'LCD'
+Note = 'Most laptops utilize liquid crystal display, discussed in Hardware.Computers.Displays'
+Comment = ''
+
+[Hardware.Computers.Laptops.Display.Resolution]
+Name = 'Laptop Display Resolution'
+Note = 'The resolution is at a fixed standard'
+Comment = ''
+
+[Hardware.Computers.Laptops.Display.Resolution.WXGA]
+Name = 'Widescreen Extended Graphics Array'
+Note = 'resolution standard'
+Comment = ''
+Measurement = '1280 by 800 and 16:10'
+
+[Hardware.Computers.Laptops.Display.Resolution.HD]
+Name = 'Resolution'
+Note = 'Similar to WXGA'
+Comment = ''
+Measurement = '1366 by 768 and 16:9'
+
+[Hardware.Computers.Laptops.Display.Resolution.WXGA_Plus]
+Name = 'Widescreen Extended Graphics Array Plus'
+Note = 'The resolution is at a fixed standard'
+Comment = ''
+Measurement = '1680 by 1050 and 16:10'
+
+[Hardware.Computers.Laptops.Display.Resolution.HD_Plus]
+Name = 'High definition Display Plus'
+Note = 'Similar to WXGA+'
+Comment = ''
+Measurement = '1680 by 945 and 16:9'
+
+# End of Laptop Display Resolution
+# End of Laptop Display
+
+[Hardware.Computers.Laptops.Audio]
+Name = 'Audio'
+Note = 'Integrated mini-PCI and speakers. Volume adjusted by buttons or sliders on the screen'
+Comment = ''
+
+[Hardware.Computers.Laptops.Storage]
+Name = 'Storage'
+Note = 'Most storage systems are removable however companies are making the shift to not contain removable or replicable technologies. Most laptops use solid state storage but you can find some HDD storage in cheaper or older laptops. If the storage is removable it is typically 2.5 inch instead of 3.5 inch. Optical drives are also common with older laptops'
+Comment = ''
+
+[Hardware.Computers.Laptops.Power]
+Name = 'Power'
+Note = 'Most laptops use a lithium ion battery, older models sometimes have removable batteries assessable from the outside. Newer models typically do not have this feature and a battery replacement'
+Comment = ''
+
+[Hardware.Computers.Laptops.Fans]
+Name = 'Fans'
+Note = 'Placed closest to the CPU. A thick copper rail leads to the fan which carries heat from major components'
+Comment = ''
+
+[Hardware.Computers.Laptops.Expansion_Devices]
+Name = 'Expansion Devices'
+Note = 'Devices you can add to your computer to allow for new or expanded functionality'
+Comment = ''
+
+[Hardware.Computers.Laptops.External]
+Name = 'External'
+Note = 'Many older computers used to have PCMCIA cards which would allow you to add new functionality to your computer like more USBs, and networking. PCMCIA needs to be supported by the OS in order to work. Newer computers have port extenders / converters / dockers that utilize USB technology. One of the most popular methods is to use a docking stations, it allows the computer to connect to between 5 - 15 other devices, it contains several different ports so that it can connect to most devices'
+Comment = ''
+
+[Hardware.Computers.Laptops.Internal]
+Name = 'Internal'
+Note = 'You can swap out cards like mini-PCI for mini-PCIe, or you can swap out a 500GB storage for a 1TB storage'
+Comment = ''
+
+[Hardware.Computers.Laptops.Communications]
+Name = 'Laptop Communications'
+Note = 'Methods that commuters use to connect to others computers'
+Comment = ''
+
+[Hardware.Computers.Laptops.Communications.Cellular]
+Name = 'Cellular'
+Note = 'Used in the oldest laptops to connect to the internet via a cellular line'
+Comment = ''
+
+[Hardware.Computers.Laptops.Communications.Wifi]
+Name = 'Wifi'
+Note = 'Laptops can either be connected via wire with RJ45, or by the more common wireless method using an internal antenna'
+Comment = ''
+
+[Hardware.Computers.Laptops.Communications.Bluetooth]
+Name = 'Bluetooth'
+Note = 'Allows the user to make a wireless personal area network, you can connect a mouse, airpods, smart devices, and many more. Some laptops utilize bluetooth to allow you to connect your phone or even another computer'
+Comment = ''
+
+[Hardware.Computers.Laptops.Communications.Infrared]
+Name = 'Infrared'
+Note = 'Very rare, it allows the user to use an infrared remote to control the computer'
+Comment = ''
+
+# End of Laptop Communications
+# End of Laptops
+
+[Hardware.Computers.Mobile]
+Name = 'Mobile Devices'
+Note = 'Small handheld devices often used for calling or watching things'
+Comment = ''
+
+[Hardware.Computers.Mobile.Phone]
+Name = 'Phone'
+Note = 'Small handheld cellular device that is able to fit in your pocket'
+Comment = ''
+
+[Hardware.Computers.Mobile.Tablets]
+Name = 'Tablets'
+Note = 'A widescreen touch sensitive device mostly used for art, entertainment, or work'
+Comment = ''
+
+# End of Mobile
+
+[Hardware.Computers.Cameras]
+Name = 'Cameras'
+Note = 'A device for recording visual images in the form of photographs or videos'
+Comment = ''
+
+# End of Cameras
+
+[Hardware.Computers.Audio]
+Name = 'Audio Equipment'
+Note = 'devices that record, reproduce, or process sound'
+Comment = ''
+
+# End of Audio
+
+[Hardware.Computers.Displays]
+Name = 'Displays'
+Note = 'Either a flat panel screen or a segmented display that shows information such as characters, numbers, images, videos, or web pages'
+Comment = ''
+
+[Hardware.Computers.Displays.Segmented]
+Name = 'Segmented Display'
+Note = 'LEDs display characters by lighting up individual segments'
+Comment = ''
+
+[Hardware.Computers.Displays.Dot_Matrix]
+Name = 'Dot Matrix'
+Note = 'LEDs display characters by lighting up individual segments'
+Comment = ''
+
+[Hardware.Computers.Displays.Matrix]
+Name = 'Matrix'
+Note = 'LEDs display characters by lighting up individual segments'
+Comment = ''
+
+# End of Displays
+
+[Hardware.Computers.Tvs]
+Name = 'Televisions'
+Note = 'a system for transmitting visual images and sound that are reproduced on screens, chiefly used to broadcast programs for entertainment, information, and education'
+Comment = ''
+
+# End of Tvs
+
+[Hardware.Computers.Printers]
+Name = 'Printers'
+Note = 'Graphic output technology capable of taking a preset design and replicating it onto a substrate'
+Comment = ''
+
+# End of Printers
+# End of Computers
+
+[Hardware.Networking]
+Name = 'Networking Hardware'
+Note = 'Physical devices, tools, and accessories that allow hardware on a network to interact with one another'
+Comment = 'This is not included in components or computers for organization reasons. Tools for networking are not listed here, you can get that in .Tools'
+
+[Hardware.Networking.Intermediary]
+Name = 'Intermediary Devices'
+Note = 'Connecting multiple networks or devices within a network'
+Comment = ''
+
+[Hardware.Networking.Intermediary.NIC]
+Name = 'Network Interface Cards'
+Note = 'A card that can fit into a computer allowing it to process networking communications'
+Comment = 'Some computers already have this built in'
+
+[Hardware.Networking.Intermediary.Hubs]
+Name = 'Hub Device'
+Note = 'Broadcast data packets to all connected devices'
+Comment = 'Also called a dumb device, because it is dumb'
+
+[Hardware.Networking.Intermediary.Switches]
+Name = 'Networking Switch'
+Note = 'Forward data packets within a network based on their MAC addresses'
+Comment = ''
+
+[Hardware.Networking.Intermediary.Switches.POE]
+Name = 'Power Over Ethernet Switch'
+Note = 'Power and data is sent through the switch to the devices'
+Comment = 'Better then having two cables going to one device, looks better to have one cable. Not available on devices that need more power'
+
+[Hardware.Networking.Intermediary.Switches.Managed]
+Name = 'Networking Switch'
+Note = 'A switch that provides additional services like a configuration interface, additional functionality, or web / command line interface'
+Comment = ''
+
+# End of Intermediary Devices
+
+[Hardware.Networking.Medium]
+Name = 'Transmission Mediums'
+Note = 'Physical pathways through which data is transmitted'
+Comment = ''
+
+[Hardware.Networking.Medium.Ethernet]
+Name = 'Ethernet'
+Note = 'Ethernet uses a set of physical and protocol standards to manage how devices transmit and receive data '
+Comment = 'Because this is in hardware, only the physical qualities will be noted'
+
+[Hardware.Networking.Medium.Ethernet.CAT]
+Name = 'Category Networking Cables'
+Note = 'CAT stands for category. It is a classification of standardized networking wires using the Ethernet standard'
+
+[Hardware.Networking.Medium.Ethernet.CAT.1]
+Name = 'Category 5'
+Note = 'Voice-grade telephone lines'
+Comment = 'Used for POTS or plain old telephone service'
+Measurement = '0.4MHz | 1Mb/s | 10 meters'
+
+[Hardware.Networking.Medium.Ethernet.CAT.2]
+Name = 'Category 5'
+Note = 'LocalTalk & Telephone'
+Comment = 'Dial up internet'
+Measurement = '4MHz | 4Mb/s | 100 meters'
+
+[Hardware.Networking.Medium.Ethernet.CAT.3]
+Name = 'Category 5'
+Note = '10BaseT Ethernet'
+Comment = 'Dial up internet'
+Measurement = '16MHz | 10Mb/s | 100 meters'
+
+[Hardware.Networking.Medium.Ethernet.CAT.4]
+Name = 'Category 5'
+Note = 'Token Ring'
+Comment = ''
+Measurement = '20MHz | 16Mb/s | 100 meters'
+
+[Hardware.Networking.Medium.Ethernet.CAT.5]
+Name = 'Category 5'
+Note = '100BaseT Ethernet'
+Comment = ''
+Measurement = '100MHz | 100Mb/s | 100 meters'
+
+[Hardware.Networking.Medium.Ethernet.CAT.5.E]
+Name = 'Category 5E'
+Note = '100BaseT Ethernet, residential homes'
+Comment = ''
+Measurement = '100MHz | 1Gb/s | 100 meters'
+
+[Hardware.Networking.Medium.Ethernet.CAT.6]
+Name = 'Category 6'
+Note = 'Gigabit Ethernet / prosumers'
+Comment = '10Gb/s at 37 meters'
+Measurement = '250MHz | 1Gb/s | 100 meters'
+
+[Hardware.Networking.Medium.Ethernet.CAT.6.A]
+Name = 'Category 6A'
+Note = 'Gigabit Ethernet in data centers / prosumers'
+Comment = ''
+Measurement = '500MHz | 10Gb/s | 100 meters'
+
+[Hardware.Networking.Medium.Ethernet.CAT.7]
+Name = 'Category 7'
+Note = '10 Gb/s used in core computer infrastructure'
+Comment = ''
+Measurement = '600MHz | 10Gb/s | 100 meters'
+
+[Hardware.Networking.Medium.Ethernet.CAT.7.A]
+Name = 'Category 7'
+Note = '10 Gb/s used in core computer infrastructure'
+Comment = '40Gb/s at 50 meters'
+Measurement = '1000MHz | 10Gb/s | 100 meters'
+
+[Hardware.Networking.Medium.Ethernet.CAT.8]
+Name = 'Category 8'
+Note = '25 or 40Gb/s, used in core computer infrastructure'
+Comment = ''
+
+[Hardware.Networking.Medium.Ethernet.CAT.8.1]
+Name = 'Category 8'
+Note = 'Fast'
+Comment = ''
+Measurement = '2000MHz | 25Gb/s | 30 meters'
+
+[Hardware.Networking.Medium.Ethernet.CAT.8.2]
+Name = 'Category 8'
+Note = 'Faster'
+Comment = ''
+Measurement = '2000MHz | 40Gb/s | 30 meters'
+
+# End of CAT
+
+[Hardware.Networking.Medium.Ethernet.Optical]
+Name = 'Fiber Ethernet'
+Note = 'A cable that uses specialized optical fibers as a medium and using the Ethernet standard'
+Comment = 'Mostly made from plastic or glass fibers'
+
+[Hardware.Networking.Medium.Ethernet.Optical.Types]
+Name = 'Optical Fiber Cable Types'
+Note = 'The name says it all'
+Comment = ''
+
+[Hardware.Networking.Medium.Ethernet.Optical.Types.Single]
+Name = 'Single-Mode Fiber'
+Note = 'Has a single mode of light propagation, and is less susceptible to signal distortion than multi-mode fiber. It is typically used for long-haul communication'
+Comment = 'Used for long distances'
+
+[Hardware.Networking.Medium.Ethernet.Optical.Types.Multi]
+Name = 'Multi-Mode Fiber'
+Note = 'has multiple modes of light propagation, and is more susceptible to signal distortion than single-mode fiber. It is commonly used for LANs and data centers'
+Comment = 'Used for short distances'
+
+# End of Optical
+
+[Hardware.Networking.Medium.Ethernet.COAX]
+Name = 'Coaxial Cable'
+Note = 'Single cable wire used mainly for cable television'
+Comment = ''
+
+# End of Ethernet
+
+[Hardware.Networking.Medium.Components]
+Name = 'Networking Medium Components'
+Note = 'Parts that make up a medium. Cables can have any mixture of these components'
+Comment = ''
+
+[Hardware.Networking.Medium.Components.Connector]
+Name = 'Connectors'
+Note = 'Attached to the end of the wire to connect it to a device'
+Comment = 'Has male and female variants'
+
+[Hardware.Networking.Medium.Components.Connector.RJ]
+Name = 'Registered Jack'
+Note = 'A standard to connect wires'
+Comment = 'Has male and female variants'
+
+[Hardware.Networking.Medium.Components.Connector.RJ.11]
+Name = 'Registered Jack 11'
+Note = '2 or 4 pins, used for telephone, is typically UTP'
+Comment = 'Has male and female variants'
+
+[Hardware.Networking.Medium.Components.Connector.RJ.14]
+Name = 'Registered Jack 14'
+Note = '6 pins, not as common, used for telephone, is typically UTP'
+Comment = 'Has male and female variants'
+
+[Hardware.Networking.Medium.Components.Connector.RJ.25]
+Name = 'Registered Jack 25'
+Note = '25 pins, super old, used for data transmission, such as X.21 and V.35 interfaces, is typically UTP'
+Comment = 'Has male and female variants'
+
+[Hardware.Networking.Medium.Components.Connector.RJ.45]
+Name = 'Registered Jack 45'
+Note = '8 pins, the most common connector for Ethernet networks, used to connect computers, routers, switches, and other network devices, is typically UTP but can also be any other variant'
+Comment = 'Has male and female variants'
+
+[Hardware.Networking.Medium.Components.Connector.RJ.48]
+Name = 'Registered Jack 48'
+Note = '8 pins, used for asynchronous digital subscriber line (ADSL) connections, is typically STP'
+Comment = 'Has male and female variants'
+
+[Hardware.Networking.Medium.Components.Connector.RJ.61]
+Name = 'Registered Jack 61'
+Note = '8 pins, used for symmetric digital subscriber line (SDSL) connections, is typically STP'
+Comment = 'Has male and female variants'
+
+[Hardware.Networking.Medium.Components.Connector.RJ.66]
+Name = 'Registered Jack 66'
+Note = '8 pins, used for digital loop carrier (DLC) systems, is typically STP'
+Comment = 'Has male and female variants'
+
+# End of Registered Jacket Connectors
+
+[Hardware.Networking.Medium.Components.Connector.Optical]
+Name = 'Optical Fiber Cable Connectors'
+Note = ''
+Comment = ''
+
+[Hardware.Networking.Medium.Components.Connector.Optical.ST]
+Name = 'Straight tip'
+Note = 'Known for their durability and wide use, ST connectors have a circular design with a bayonet-style locking mechanism, but they offer higher insertion loss compared to SC and LC'
+Comment = ''
+
+[Hardware.Networking.Medium.Components.Connector.Optical.SC]
+Name = 'Subscriber Connector'
+Note = 'Popular for their smaller size, lower insertion loss, and easier connection/disconnection. They have a square design with a push-pull latch mechanism'
+Comment = 'Used by ISPs to connect a subscriber to their network'
+
+[Hardware.Networking.Medium.Components.Connector.Optical.LC]
+Name = 'Lucent Connector'
+Note = 'Smallest size and lowest insertion loss, LC connectors are ideal for high-density applications. They have a square design with a push-pull latch mechanism'
+Comment = ''
+
+[Hardware.Networking.Medium.Components.Jacket]
+Name = 'Jacket'
+Note = 'The outermost part of a cable, holding all other components inside'
+Comment = 'Or it can just enclose a single conductor'
+
+[Hardware.Networking.Medium.Components.Twisted]
+Name = 'Twisted Pair'
+Note = 'Wires are twisted together in groups'
+Comment = 'Twisting reduces interference'
+
+[Hardware.Networking.Medium.Components.Shield]
+Name = 'Shielded Wire'
+Note = 'Each pair has a thin metal foil (faraday cage) that encapsulates them to protect them from interfering electromagnetic signals'
+Comment = 'A wire can be unshielded or shielded. If it is shielded it is called UTP or Unshielded Twisted Pair, if it is shielded it is called STP or Shielded Twisted Pair'
+
+[Hardware.Networking.Medium.Components.Foiled]
+Name = 'Foiled Wire'
+Note = 'A faraday foil surrounds all pairs in the wire'
+Comment = 'Called FTP or foiled twisted pair'
+
+[Hardware.Networking.Medium.Components.Foiled.Screened]
+Name = 'Screened Foiled Wire'
+Note = 'A braided faraday foil surrounds all pairs in the wire'
+Comment = 'Called S/FTP or screened foiled twisted pair'
+
+
+# End of Networking Medium Components
+# End of Networking Transmission Mediums
+
+[Hardware.Networking.Accessories]
+Name = 'Networking Hardware Accessories'
+Note = 'Additional components used to support network infrastructure'
+Comment = ''
+
+# End of Accessories
+
+[Hardware.Tools]
+Name = 'Tools'
+Note = 'Tools used to build, fix, or diagnose IT components'
+Comment = ''
+
+[Hardware.Tools.Installation]
+Name = 'Installation Tools'
+Note = 'Tools used to build adjust or fix'
+Comment = ''
+
+[Hardware.Tools.Installation.Crimper]
+Name = 'Cable Crimper'
+Note = 'Used to connect an RJ male end connector to a wire'
+Comment = ''
+
+[Hardware.Tools.Installation.Punchdown]
+Name = 'Punchdown'
+Note = 'Used to connect an RJ female end connector to a wire'
+Comment = ''
+
+# End of Installation Tools
+
+[Hardware.Tools.Diagnostics]
+Name = 'Diagnostics Tools'
+Note = 'Tools used to test'
+Comment = ''
+
+[Hardware.Tools.Diagnostics.Cable_Tester]
+Name = 'Cable Tester'
+Note = 'Tests a data cable to see if is configured correctly, typically RJ45'
+Comment = ''
+
+[Hardware.Tools.Diagnostics.Toner]
+Name = 'Toner'
+Note = 'Sends a signal through a wire, a probe device is able to pick up on the signal like a metal detector'
+Comment = 'Used to find the path that a cable takes'
+
+# End Of Diagnostics Tools
+
+[Hardware.Tools.Safety]
+Name = 'Safety Tools'
+Note = 'Tools and equipment designed to keep the technician and the equipment safe'
+Comment = ''
+
+[Hardware.Tools.Safety.ESD]
+Name = 'Electrostatic Discharge Prevention'
+Note = 'Tiny electrical shocks from your body that may damage sensitive electrical equipment'
+Comment = ''
+
+[Hardware.Tools.Safety.ESD.Tools]
+Name = 'ESD Tools'
+Note = 'ESD rated tools meant for working on electrical components'
+Comment = 'ESD rated screw drivers, tweezers, ect'
+
+[Hardware.Tools.Safety.ESD.Bag]
+Name = 'Anti-Static Bag'
+Note = 'Allows electrical components to be transported safely and it mitigates static buildup'
+Comment = ''
+
+[Hardware.Tools.Safety.ESD.Mat]
+Name = 'Anti-Static Mat'
+Note = 'A grounded mat used for working on electrical components, it has an alligator clip on it to ground the chassis'
+Comment = ''
+
+[Hardware.Tools.Safety.ESD.Strap]
+Name = 'Anti-Static Wrist Strap'
+Note = 'A wrist strap connected to a small wire that connects to ground'
+Comment = ''
+
+[Hardware.Tools.Safety.ESD.Spray]
+Name = 'Anti-Static Spray'
+Note = 'Reduces static electricity in the environment by providing slight humidity at a safe level'
+Comment = 'Do not spray it on the equipment like a dummy'
+
+# End of Safety Tools
+# End of Hardware
+
+[Software]
+Name = 'Software'
+Note = ''
+Comment = ''
+
+[Software.Code]
+Name = 'Code'
+Note = ''
+Comment = ''
+
+[Software.Code.Binary]
+Name = 'Binary'
+Note = 'Electric signals that represent a value of either 1 or 0 to execute functions within the base components of the hardware'
+Comment = ''
+
+[Software.Code.Binary.Unit]
+Name = 'Binary Unit'
+Note = 'A bit is the smallest unit of digital information. Eight bits together form a byte. A kilobyte (KB) is equal to 1024 bytes. As you move up in size, each subsequent unit is 1024 times larger than the previous one. For example, a megabyte (MB) is 1024 KB, and a gigabyte (GB) is 1024 MB'
+Comment = 'The order is, Bit, Byte, Kilobyte, Megabyte, Gigabyte, Terabyte, Petabyte, Exabyte, Zettabyte, Yottabyte'
+
+# End of Binary
+# End of Code
+
+[Software.Firmware]
+Name = 'Firmware'
+Note = ''
+Comment = ''
+
+# End of Firmware
+
+[Software.OS]
+Name = 'Operating System'
+Note = ''
+Comment = ''
+
+# End of Operating System
+
+[Software.Applications]
+Name = 'Applications'
+Note = ''
+Comment = ''
+
+# End of Applications
+
+[Networking]
+Name = 'Networking'
+Note = ''
+Comment = ''
+
+[Networking.Protocols]
+Name = 'Protocols'
+Note = ''
+Comment = ''
+
+[Networking.Protocols.Layers]
+Name = 'Protocols'
+Note = ''
+Comment = ''
+
+[Networking.Protocols.Layers.Physical]
+Name = 'Protocols'
+Note = ''
+Comment = ''
+
+[Networking.Protocols.Layers.Data]
+Name = 'Protocols'
+Note = ''
+Comment = ''
+
+[Networking.Protocols.Layers.Network]
+Name = 'Protocols'
+Note = ''
+Comment = ''
+
+[Networking.Protocols.Layers.Transport]
+Name = 'Protocols'
+Note = ''
+Comment = ''
+
+[Networking.Protocols.Layers.Session]
+Name = 'Protocols'
+Note = ''
+Comment = ''
+
+[Networking.Protocols.Layers.Presentation]
+Name = 'Protocols'
+Note = ''
+Comment = ''
+
+[Networking.Protocols.Layers.Application]
+Name = 'Protocols'
+Note = ''
+Comment = ''
+
+[Networking.Protocols.IEEE]
+Name = 'Institute Of Electrical And Electronics Engineers Networking Protocols'
+Note = 'The leading organization in developing standards for networking technologies. It has created numerous standards that have become fundamental to modern communication networks'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wired]
+Name = 'IEEE Ethernet Standards'
+Note = 'Protocols for wired communications'
+Comment = ''
+
+[Networking.Protocols.IEEE.Ethernet]
+Name = 'IEEE Ethernet Standards'
+Note = 'Protocols for Ethernet standard communications'
+Comment = ''
+
+[Networking.Protocols.IEEE.Ethernet.802.3]
+Name = '802.3'
+Note = 'The foundational standard for ethernet networks, defining the physical layer and the MAC layer'
+Comment = ''
+
+[Networking.Protocols.IEEE.Ethernet.802.3.U]
+Name = '802.3u'
+Note = 'Gigabit Ethernet standard'
+Comment = ''
+
+[Networking.Protocols.IEEE.Ethernet.802.3.AB]
+Name = '802.3ab'
+Note = '10 gigabit Ethernet standards'
+Comment = ''
+
+[Networking.Protocols.IEEE.Ethernet.802.3.AE]
+Name = '802.3ae'
+Note = '40 gigabit Ethernet standards'
+Comment = ''
+
+[Networking.Protocols.IEEE.Ethernet.802.3.BA]
+Name = '802.3ba'
+Note = '100 gigabit ethernet standards'
+Comment = ''
+
+[Networking.Protocols.IEEE.Ethernet.802.17]
+Name = '802.17'
+Note = 'Resilient Packet Ring (RPR) standard for optical networking'
+Comment = 'Optical networking'
+
+[Networking.Protocols.IEEE.Ethernet.1394]
+Name = '1394'
+Note = 'FireWire standard for high speed serial bus'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless]
+Name = 'IEEE Wireless STandards'
+Note = 'Protocols standards for wireless communications'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.11]
+Name = '802.11'
+Note = 'The WiFi standard, defining the physical and MAC layers for wireless local area networks'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.11.A]
+Name = '802.11'
+Note = 'WiFi operating in 5GHz band'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.11.B]
+Name = '802.11'
+Note = 'WiFi operating in 2.4GHz band'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.11.G]
+Name = '802.11'
+Note = 'WiFi operating in 2.4GHz band but for higher data rates'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.11.N]
+Name = '802.11'
+Note = 'WiFi for Multiple-Input Multiple-Output (MIMO) for higher throughput'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.11.AC]
+Name = '802.11'
+Note = 'WiFi for Multi-User Multiple-Input Multiple-Output (MU-MIMO) for higher throughput in dense environments'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.11.AX]
+Name = '802.11'
+Note = 'WiFi 6 standard for better performance overall'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.15]
+Name = '802.15'
+Note = 'Bluetooth standard for short range communications'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.16]
+Name = '802.16'
+Note = 'WiMAX standard for broadband wireless access'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.18]
+Name = '802.18'
+Note = 'Radio frequency identification standard (RFID)'
+Comment = ''
+
+# End of Protocols
+
+[Networking.Topology]
+Name = 'Network Topology'
+Note = ''
+Comment = ''
+
+[Networking.Topology.Shape]
+Name = 'Network Shape'
+Note = ''
+Comment = ''
+
+# End of Network Shape
+
+[Networking.Topology.Levels]
+Name = 'Network Levels'
+Note = 'The classification of the size of a network and what it contains'
+Comment = ''
+
+[Networking.Topology.Levels.PAN]
+Name = 'Personal Area Network'
+Note = 'A small network that connects small components to computer'
+Comment = ''
+
+[Networking.Topology.Levels.LAN]
+Name = 'Local Area Network'
+Note = 'Multiple computers connected on the same network'
+Comment = ''
+
+[Networking.Topology.LAN.WLAN]
+Name = 'Wireless Local Area Network'
+Note = 'A network without wired connections, used for networks with mobile devices'
+Comment = 'Mostly used in the home'
+
+[Networking.Topology.Levels.MAN]
+Name = 'Metropolitan Area Network'
+Note = 'Multiple LANs connected together'
+Comment = ''
+
+[Networking.Topology.Levels.WAN]
+Name = 'Wide Area Network'
+Note = 'Multiple MANs connected together'
+Comment = ''
+
+# End of Network Levels
+# End of Network Topology
+
+[Networking.Cloud]
+Name = 'Cloud'
+Note = ''
+Comment = ''
+
+# End of Cloud
+# End of Networking
+
+[Security]
+Name = 'Security'
+Note = ''
+Comment = ''
+
+[Security.Network]
+Name = 'Network Security'
+Note = ''
+Comment = ''
+
+[Security.Network.Perimeter]
+Name = 'Perimeter Network Security'
+Note = ''
+Comment = ''
+
+# End of Perimeter Network Security
+
+[Security.Network.Internal]
+Name = 'Internal Network Security'
+Note = ''
+Comment = ''
+
+# End of Internal Network Security
+# End of Network Security
+
+[Security.Application]
+Name = 'Application Security'
+Note = ''
+Comment = ''
+
+[Security.Application.Perimeter]
+Name = 'Perimeter Application Security'
+Note = ''
+Comment = ''
+
+# End of Perimeter Application Security
+
+[Security.Application.Internal]
+Name = 'Internal Application Security'
+Note = ''
+Comment = ''
+
+# End of Internal Application Security
+# End of Application Security
+
+[Security.Physical]
+Name = 'Physical Security'
+Note = ''
+Comment = ''
+
+[Security.Physical.Perimeter]
+Name = 'Perimeter Physical Security'
+Note = ''
+Comment = ''
+
+# End of Perimeter Physical Security
+
+[Security.Physical.Internal]
+Name = 'Internal Physical Security'
+Note = ''
+Comment = ''
+
+# End of Internal Physical Security
+# End of Physical Security
+# End of Security
+# End :(
