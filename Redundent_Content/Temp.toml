@@ -1,0 +1,243 @@
+[IP]
+Name = 'Internet Protocol Address'
+Note = 'A unique string of characters assigned by a router that identifies each computer using the Internet Protocol to communicate over a network'
+Comment = 'Like a house address but for computers'
+
+[IP.Concepts]
+Name = 'Internet Protocol Addressing Concepts'
+Note = 'Common concepts and terminologies used to describe IP addresses'
+Comment = ''
+
+[IP.Concepts.DHCP]
+Name = 'Dynamic Host Configuration Protocol'
+Note = 'A server that manages what IP addresses are already assigned and assigns and IP address to a device that is requesting one'
+Comment = ''
+
+[IP.Concepts.Range]
+Name = 'Range'
+Note = 'The amount of addresses, starting from the first address to the last. IPv4 has a range of of 4.29 billion addresses while IPv6 has about 340 undecillion addresses'
+Comment = ''
+
+[IP.Concepts.Private]
+Name = 'Private Addresses'
+Note = 'Used within a network'
+Comment = ''
+
+[IP.Concepts.Public]
+Name = 'Public Addresses'
+Note = 'Used outside of a private network and in the internet'
+Comment = ''
+
+[IP.Concepts.Dynamic]
+Name = 'Dynamic Address'
+Note = 'The devices assigned address is changed every so often'
+Comment = 'About every week or so'
+
+[IP.Concepts.Dynamic.Lease]
+Name = 'Address Lease'
+Note = 'The period of time a device can keep its address before it is resigned an new one'
+Comment = 'Can be sometimes be manually adjusted'
+
+[IP.Concepts.Static]
+Name = 'Static Address'
+Note = 'A device that is assigned and address that is set and does not change and has to be manually adjusted'
+Comment = 'Used for devices like printers'
+
+[IP.Concepts.Reservation]
+Name = 'Reservation'
+Note = 'An address or range of addresses reserved for particular devices'
+Comment = ''
+
+[IP.Concepts.Exclusion]
+Name = 'Exclusion'
+Note = 'An address or range of addresses that you do not want to be assigned to a device'
+Comment = 'About every week or so'
+
+[IP.Concepts.Static.APIPA]
+Name = 'Automatic Private IP Addressing'
+Note = 'In the case that the DHCP server is not responding and fails to assign an address, an operating system might try to assign an address to itself'
+Comment = 'In IPv4 it starts with 169.254. and end with any number'
+
+[IP.Concepts.DNS]
+Name = 'Domain Name System'
+Note = 'Used in the internet, it converts names to addresses and addresses to to names. It has a log of what names are assigned to addresses and it assigns names to addresses. This can be build into the web browser itself but it can only remember servers address and names, it can not find the address of names. Your computer will have to connect to a DNS server to find the address or name'
+Comment = 'Act as a phone book for the internet. Instead of typing out the IP address for youtube servers you can just type out youtube.com'
+
+[IP.Standards]
+Name = 'IP Standards'
+Note = 'Different IP addressing standards'
+Comment = ''
+
+[IP.Standards.V4]
+Name = 'IPv4'
+Note = 'IP standard version 4, contains a class A, B, and C addressing spaces. Each address is 32 bits within 4 octets'
+Comment = 'IPv4 is being phased out by IPv6'
+
+[IP.Standards.V4.Public]
+Name = 'IPv4 public addressing'
+Note = 'Can be any address ranging from 0.0.0.0 to 255.255.255.255'
+Comment = ''
+
+[IP.Standards.V4.Private]
+Name = 'IPv4 private addressing'
+Note = 'Addresses assigned within a private network using the IPv4 standard'
+Comment = 'Subnet masks start with 255'
+
+[IP.Standards.V4.Private.A]
+Name = 'Class A'
+Note = 'Used for the largest networks'
+Comment = ''
+Measurement = 'Addressing range from 0.0.0.0 to 127.255.255.255 | 8 networking bits, 24 host bits | and a maximum of 16,777,214 hosts per network'
+
+[IP.Standards.V4.Private.B]
+Name = 'Class B'
+Note = 'Used for medium networks'
+Comment = ''
+Measurement = 'Addressing range from 128.0.0.0 to 191.255.255.255 | 16 networking bits | 16 host bits | and a maximum of 65,534 hosts per network'
+
+[IP.Standards.V4.Private.C]
+Name = 'Class C'
+Note = 'Used for small networks'
+Comment = ''
+Measurement = 'Addressing range from 192.0.0.0 to 223.255.255.255 | 25 networking bits | 8 host bits | and a maximum of 254 hosts per network'
+
+[IP.Standards.V6]
+Name = 'IPv6'
+Note = 'IP version 6 is designed to add more addressing space and add more utility to teh address itself. It is a 128 bit number written in the hexadecimal format contained within 16 octets and split into 3 sections'
+Comment = ''
+
+[IP.Standards.V6.GP]
+Name = 'Global Unicast Prefix'
+Note = 'The fist section of the address containing 48 bits within 6 octets. Identifies a specific network or organization and is assigned by regional Internet registries (RIRs)'
+Comment = ''
+
+[IP.Standards.V6.SID]
+Name = 'Subnet ID'
+Note = 'The second section of the address containing 16 bits within 2 octets. Identifies a specific subnet within a network and is assigned by the network administrator'
+Comment = ''
+
+[IP.Standards.V6.IID]
+Name = 'Interface ID'
+Note = 'The last and third section of the address containing 64 bits within 8 octets. Identifies a device in a network and is addressed by modifying its MAC address'
+Comment = ''
+
+[VLAN]
+Name = 'Virtual LAN'
+Note = 'Subdivides a LAN network into separate smaller networks'
+Comment = 'Often used to categorize what network devices are on. For instance, you can have all devices on one LAN, but you can have all phones on VLAN1, all computers on VLAN2, and all utility devices on VLAN3'
+
+[VPN]
+Name = 'Virtual Private Network'
+Note = 'A remote server you can connect to that redirects your network traffic, it requires authorized access and provide unique services'
+Comment = 'You can connect to a VPN to encrypt and mask your network traffic for security. You can also use a VPN to connect to your office network in the case that you want to remotely connect from home or other locations'
+
+[Web]
+Name = 'Word Wide Web'
+Note = 'A collection of websites and documents that are accessible over the internet and follows the Hypertext Transfer Protocol (HTTP). The web is made up out of documents and recourses like pictures, videos, and text'
+Comment = ''
+
+
+[Networking.Protocols.IEEE]
+Name = 'Institute Of Electrical And Electronics Engineers Networking Protocols'
+Note = 'The leading organization in developing standards for networking technologies. It has created numerous standards that have become fundamental to modern communication networks'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wired]
+Name = 'IEEE Ethernet Standards'
+Note = 'Protocols for wired communications'
+Comment = ''
+
+[Networking.Protocols.IEEE.Ethernet]
+Name = 'IEEE Ethernet Standards'
+Note = 'Protocols for Ethernet standard communications'
+Comment = ''
+
+[Networking.Protocols.IEEE.Ethernet.802.3]
+Name = '802.3'
+Note = 'The foundational standard for ethernet networks, defining the physical layer and the MAC layer'
+Comment = ''
+
+[Networking.Protocols.IEEE.Ethernet.802.3.U]
+Name = '802.3u'
+Note = 'Gigabit Ethernet standard'
+Comment = ''
+
+[Networking.Protocols.IEEE.Ethernet.802.3.AB]
+Name = '802.3ab'
+Note = '10 gigabit Ethernet standards'
+Comment = ''
+
+[Networking.Protocols.IEEE.Ethernet.802.3.AE]
+Name = '802.3ae'
+Note = '40 gigabit Ethernet standards'
+Comment = ''
+
+[Networking.Protocols.IEEE.Ethernet.802.3.BA]
+Name = '802.3ba'
+Note = '100 gigabit ethernet standards'
+Comment = ''
+
+[Networking.Protocols.IEEE.Ethernet.802.17]
+Name = '802.17'
+Note = 'Resilient Packet Ring (RPR) standard for optical networking'
+Comment = 'Optical networking'
+
+[Networking.Protocols.IEEE.Ethernet.1394]
+Name = '1394'
+Note = 'FireWire standard for high speed serial bus'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless]
+Name = 'IEEE Wireless STandards'
+Note = 'Protocols standards for wireless communications'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.11]
+Name = '802.11'
+Note = 'The WiFi standard, defining the physical and MAC layers for wireless local area networks'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.11.A]
+Name = '802.11'
+Note = 'WiFi operating in 5GHz band'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.11.B]
+Name = '802.11'
+Note = 'WiFi operating in 2.4GHz band'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.11.G]
+Name = '802.11'
+Note = 'WiFi operating in 2.4GHz band but for higher data rates'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.11.N]
+Name = '802.11'
+Note = 'WiFi for Multiple-Input Multiple-Output (MIMO) for higher throughput'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.11.AC]
+Name = '802.11'
+Note = 'WiFi for Multi-User Multiple-Input Multiple-Output (MU-MIMO) for higher throughput in dense environments'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.11.AX]
+Name = '802.11'
+Note = 'WiFi 6 standard for better performance overall'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.15]
+Name = '802.15'
+Note = 'Bluetooth standard for short range communications'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.16]
+Name = '802.16'
+Note = 'WiMAX standard for broadband wireless access'
+Comment = ''
+
+[Networking.Protocols.IEEE.Wireless.802.18]
+Name = '802.18'
+Note = 'Radio frequency identification standard (RFID)'
+Comment = ''

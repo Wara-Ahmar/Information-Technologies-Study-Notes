@@ -2,22 +2,24 @@
 # A major thanks goes towards: 
     # How To Network https://www.howtonetwork.com/
     # Burning Ice Tech https://www.youtube.com/@BurningIceTech
-    
+
 # Edit history
     # November 18 2023: 1 1/2 hours: Added motherboard | added Bus | added Data
     # November 19 2023: 2 hours: Extended Bus | added BIOS
     # November 20 2023: 2 hour: Extended BIOS | extended CPU | added Clock | added RAM
-    # November 22 2023: 1/2 hour: Extended RAM
-    # December 1 2023: 1/2 hour: Added Storage
+    # November 22 2023: 2 hour: Extended RAM
+    # December 1 2023: 1 : Added Storage
     # October 10 2024: 5 hours: Came back after a while | started objective [Formatting] | extended Storage | added Power | added Chassis
     # October 11 2024: 4 hours: Definition changes | spell corrections | completed Task_1 in objective [Formatting]
     # October 12 2024: 3 hours: Extended Work | added Laptops | added Mobile | added Printers | added Cameras | added Tvs | added Displays
-    # October 13 2024: 2 hours: Extended Laptops | small extensions in several other locations 
+    # October 13 2024: 2 hours: Extended Laptops | small extensions in several locations 
     # October 15 2024: 6 hours: Extended Security | completed Task_2, Task_3, Task_4, and Task_5 in objective [Formatting] | worked on Task_6 and Task_7 in objective [Formatting]
-    # October 16 2024: 4 1/2 hours: Completed Task_6 | worked on Task_7 in objective [Formatting]
+    # October 16 2024: 4 : Completed Task_6 | worked on Task_7 in objective [Formatting]
     # October 17 2024: 2 hours: Worked on Task_7 in objective [Formatting] | created Networking Devices
     # October 19 2024: 3 hours: Extended Networking Devices | Extended Networking
-    # October 20 2024: 6 hours: Extended Networking Devices | added Tools | completed Task_7 in objective [Formatting]| worked on Task_8 in objective [Formatting]| extended Networking
+    # October 20 2024: 6 hours: Extended Networking Devices | added Tools | completed Task_7 in objective [Formatting]| completed objective [Formatting]| extended Networking
+    # October 21 2024 2 hours: Moved project to github | moved the method of creating tasks and objectives to github
+    # October 22 2024: 8 hours: Extended Networking | added to the Temp document | reformatted Networking | minor extensions in several locations | added 3 tasks | added roadmap to the Development Notes | drank several cups of coffee today
 
 # Rules
     # Try to be concise
@@ -44,35 +46,55 @@
         # Capitalize the first letter at the start of each note
         # Do not use punctuation at the end
         # Category side notes
-            # Write "End of (name of category)" if the category consists of 5 or more entries, this is at the end of the category 
+            # Write "End of (name of category)" if the category consists of 5 or more entries, this is at the end of the category
+            # If multiple category side notes are on top of one another, the topmost note gets indented the furthest and the last one is not indented at all
 
         # Edit History
             # The date, and time spend working must be recorded
             # If a category is created it is written "added (name of category)"
             # If a category is added to it is written "extended (name of category)"
-            # If an objective is created it is written "started objective [Objective Name]"
-            # If an objective is finished it is written "completed objective [Objective Name]"
-            # If a task is added is it written "added Task_(task number) in objective [Objective Name]"
-            # If a task was worked on but not completed is it written "worked on Task_(task number) in objective [Objective Name]"
-            # If a task is completed is it written "completed Task_(task number) in objective [Objective Name]"
             # Categories must not be considered "finished", there is always more to be learned
             # Deletions of catagories will not be noted
             # Minor or insignificant additions / extensions should not be noted but they can
             # Edit history can be vague and it does not have to be absolutely precise. It should aim to get the general message across of what was done that day
 
+        # Old Rules
+            # If an objective is created it is written "started objective [Objective Name]"
+            # If an objective is finished it is written "completed objective [Objective Name]"
+            # If a task is added is it written "added Task_(task number) in objective [Objective Name]"
+            # If a task was worked on but not completed is it written "worked on Task_(task number) in objective [Objective Name]"
+            # If a task is completed is it written "completed Task_(task number) in objective [Objective Name]"
+
+
     # Objectives
-        # Each objective should have a clear focus
-        # Tasks in an objective should aim to take no longer than a day but they can
-        # The order objectives and tasks are written should be chronologically completed but they do not have to
+        # Objectives, tasks, issues are written / reported in the github repository. Write whatever you want
 
-[Objectives]
+# Roadmap
 
-[Objectives.Formatting]
-Task_1 = 'Experiment with ideas for how to better format'
-Task_2 = 'Develop general framework for formatting'
-Task_3 = 'Develop general framework for noting'
-Task_4 = 'Start implementing framework for formatting'
-Task_5 = 'Add separate file for documentation'
-Task_6 = 'Add system of rules for formatting, side notes, and objectives'
-Task_7 = 'Integrate information from the former system to the new one'
-Task_8 = 'Fully inspect everything'
+# 1 = Create general outlines for the project
+
+# 1.1 = Create general outline for note taking and building content
+
+# 1.2 = Create rules to follow, systems of documentation, and publicly host the project to Github
+
+# 2 = Take notes
+
+# 2.1 = Create notes with a major emphasis on hardware and a minor emphasis on software, networking, and security
+
+# 2.2 = Create notes with a major emphasis on software and a minor emphasis on hardware, networking, and security
+
+# 2.3 = Create notes with a major emphasis on Networking and a minor emphasis on hardware, software, and security
+
+# 2.4 = Create notes with a major emphasis on Security and a minor emphasis on hardware, software, and networking
+
+# 3 = Create an application that takes the TOML code and displays it in a GUI
+
+# 4 = Create a video series teaching all of the content for free
+
+# 4.1 = Create a designated channel for the content
+
+# 4.2 = Get necessary equipment for recording
+
+# 4.3 = Create a general outline for how each video should be recorded
+
+# 4.4 = Record the videos and publish them one at a time

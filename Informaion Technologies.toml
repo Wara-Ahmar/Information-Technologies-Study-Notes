@@ -196,6 +196,14 @@ Name = 'Random Accesses Memory'
 Note = 'Short term information that is able to be accessed at a fast rate but in low volume'
 Comment = ''
 
+[Hardware.Components.Motherboard.Components.RAM.Registered_Memory]
+Name = 'Registered Memory'
+Note = 'Also called buffered memory, it is an in-between of the RAM and the memory controller. It provides integrity to the signal'
+
+[Hardware.Components.Motherboard.Components.RAM.Latency]
+Name = 'Memory Latency'
+Note = 'Also known as the column address strobe latency, this is the delay between the memory controller requesting data, and the data availability. The lower the latency the better. Measured in nanoseconds but with RAM its measured in clock cycles'
+
 [Hardware.Components.Motherboard.Components.RAM.SRAM]
 Name = 'Static RAM'
 Note = 'Data is stored as a static image until the image is removed. This method is very fast but not scalable meaning you can not store large images onto the SRAM'
@@ -251,8 +259,8 @@ Note = ''
 Comment = ''
 Measurement = '1.1v | 51200Mb/s data rate | 51.2GB/s bandwidth | 128GB capacity | 288 pins'
 
-# End of DDR
-# End of SDRAM
+        # End of DDR
+    # End of SDRAM
 # End of DIMM
 
 [Hardware.Components.Motherboard.Components.RAM.DRAM.SODIMM]
@@ -270,10 +278,6 @@ Comment = 'Bro took the L'
 [Hardware.Components.Motherboard.Components.RAM.ROM]
 Name = 'Read Only Memory'
 Note = 'As the name implies, the ROM is only meant to be read from and not written to. You can write to it by flashing it like with the bios'
-
-[Hardware.Components.Motherboard.Components.RAM.Latency]
-Name = 'Memory Latency'
-Note = 'Also known as the column address strobe latency, this is the delay between the memory controller requesting data, and the data availability. The lower the latency the better. Measured in nanoseconds but with RAM its measured in clock cycles'
 
 [Hardware.Components.Motherboard.Components.RAM.Multichannel_Architecture]
 Name = 'Multichannel Architecture'
@@ -304,10 +308,6 @@ Note = 'Single sided chips have one bank on them an offers a higher density of d
 [Hardware.Components.Motherboard.Components.RAM.Double_Sided]
 Name = 'Double Sided'
 Note = 'Double sided have two banks on the stick, a computer can only access one bank at a time so it is important to have the more important data on one side of the chip'
-
-[Hardware.Components.Motherboard.Components.RAM.Registered_Memory]
-Name = 'Registered Memory'
-Note = 'Also called buffered memory, it is an in-between of the RAM and the memory controller. It provides integrity to the signal'
 
 # End of Ram
 
@@ -399,7 +399,7 @@ Name = 'Bios Monitoring'
 Note = 'The bios will monitor and process information about the hardwares function such as temperatures, performance, fan speeds, intrusion detections, voltage, and clock speeds in hz'
 Comment = ''
 
-# End of BIOS Configuration
+    # End of BIOS Configuration
 # End of BIOS
 
 [Hardware.Components.Motherboard.Components.Cards]
@@ -407,7 +407,7 @@ Name = 'Cards'
 Note = 'An expansion card, also known as an expansion board, adapter card, peripheral card, or accessory card, is a printed circuit board (PCB) that can be inserted into an electrical connector or expansion slot on a computers motherboard to add functionality to a computer system'
 Comment = ''
 
-# End of Motherboard Components
+        # End of Motherboard Components
 # End of Motherboard
 
 [Hardware.Components.Cooling]
@@ -707,7 +707,7 @@ Name = 'Compact Flash'
 Note = 'Comes in type 1 which is 3.3mm and type 2 which is 2.5mm. Higher capacity at 137 GB and typically not meant to be removable'
 Comment = ''
 
-# End of Solid State Storage
+    # End of Solid State Storage
 # End of Storage
 
 [Hardware.Components.Power]
@@ -804,11 +804,7 @@ Name = 'Power Supply Unit'
 Note = 'Converts AC to DC and supplies power to every component inside the computer. The device typically has an on off switch and a switch to adapt to different countries voltages. Range from 300 to 1000W'
 Comment = ''
 
-[Hardware.Components.Power.Devices.Protective]
-Name = 'Protective'
-Note = 'A piece of equipment that protects a device from the potential danger of electrical spikes, sags, surges, brownouts, and blackouts'
-
-[Hardware.Components.Power.Devices.Protective.Surge_Protectors]
+[Hardware.Components.Power.Devices.Surge_Protectors]
 Name = 'Surge Protectors'
 Note = 'A device that provides a steady current to avoid surges and spikes. It works by using a metal filament called a metal oxide varistor or MOV, it restricts the flow of voltage within a steady range and any access voltage gets returned to ground. They can either be installed directly into the electric panel or it can be plugged into the wall before other electrical devices. Surge protectors can also be built into electrical devices themselves'
 Comment = ''
@@ -816,21 +812,6 @@ Comment = ''
 [Hardware.Components.Power.Devices.UPS]
 Name = 'Uninterruptible power supply'
 Note = 'A piece of equipment that protects a device from all potential problems and provides a consistently steady flow of electricity. It contains a surge protector and a backup battery during a brownout or blackout'
-Comment = ''
-
-[Hardware.Components.Power.Devices.Distributors]
-Name = 'Distributors'
-Note = 'A piece of equipment that distributes electricity from an outlet or hardwired source to multiple locations'
-Comment = ''
-
-[Hardware.Components.Power.Devices.Distributors.Strips]
-Name = 'Power strips'
-Note = 'A plug in method to daisy chain the power from one outlet into many more on a stick. Usually contains a 10 to 15 amp breaker to avoid overdraw'
-Comment = ''
-
-[Hardware.Components.Power.Devices.Distributors.Rackstrips]
-Name = 'Rackmount power strips'
-Note = 'A power strip built into or adapted to be mounted in a data rack'
 Comment = ''
 
 [Hardware.Components.Power.Devices.Connectors]
@@ -859,8 +840,18 @@ Note = 'Used to power PCI-a devices (graphics)'
 Comment = ''
 
 # End of Power Connectors
-# End of Power Distribution Devices
-# End of Power
+
+[Hardware.Components.Power.Devices.Strips]
+Name = 'Power strips'
+Note = 'A plug in method to daisy chain the power from one outlet into many more on a stick. Usually contains a 10 to 15 amp breaker to avoid overdraw'
+Comment = ''
+
+[Hardware.Components.Power.Devices.Rackstrips]
+Name = 'Rackmount power strips'
+Note = 'A power strip built into or adapted to be mounted in a data rack'
+Comment = ''
+
+    # End of Power
 # End of Hardware Components
 
 [Hardware.Computers]
@@ -1314,7 +1305,7 @@ Comment = 'Has male and female variants'
 
 [Hardware.Networking.Medium.Components.Connector.Optical]
 Name = 'Optical Fiber Cable Connectors'
-Note = ''
+Note = 'Connectors used for optical fibers'
 Comment = ''
 
 [Hardware.Networking.Medium.Components.Connector.Optical.ST]
@@ -1358,7 +1349,7 @@ Note = 'A braided faraday foil surrounds all pairs in the wire'
 Comment = 'Called S/FTP or screened foiled twisted pair'
 
 
-# End of Networking Medium Components
+    # End of Networking Medium Components
 # End of Networking Transmission Mediums
 
 [Hardware.Networking.Accessories]
@@ -1413,7 +1404,7 @@ Note = 'Tools and equipment designed to keep the technician and the equipment sa
 Comment = ''
 
 [Hardware.Tools.Safety.ESD]
-Name = 'Electrostatic Discharge Prevention'
+Name = 'Electrostatic Discharge'
 Note = 'Tiny electrical shocks from your body that may damage sensitive electrical equipment'
 Comment = ''
 
@@ -1442,7 +1433,8 @@ Name = 'Anti-Static Spray'
 Note = 'Reduces static electricity in the environment by providing slight humidity at a safe level'
 Comment = 'Do not spray it on the equipment like a dummy'
 
-# End of Safety Tools
+        # End of Electrostatic Discharge
+    # End of Safety Tools
 # End of Hardware
 
 [Software]
@@ -1465,7 +1457,6 @@ Name = 'Binary Unit'
 Note = 'A bit is the smallest unit of digital information. Eight bits together form a byte. A kilobyte (KB) is equal to 1024 bytes. As you move up in size, each subsequent unit is 1024 times larger than the previous one. For example, a megabyte (MB) is 1024 KB, and a gigabyte (GB) is 1024 MB'
 Comment = 'The order is, Bit, Byte, Kilobyte, Megabyte, Gigabyte, Terabyte, Petabyte, Exabyte, Zettabyte, Yottabyte'
 
-# End of Binary
 # End of Code
 
 [Software.Firmware]
@@ -1491,169 +1482,42 @@ Comment = ''
 
 [Networking]
 Name = 'Networking'
-Note = ''
+Note = 'The process of connecting devices to exchange data and resources'
 Comment = ''
-
-[Networking.Protocols]
-Name = 'Protocols'
-Note = ''
-Comment = ''
-
-[Networking.Protocols.Layers]
-Name = 'Protocols'
-Note = ''
-Comment = ''
-
-[Networking.Protocols.Layers.Physical]
-Name = 'Protocols'
-Note = ''
-Comment = ''
-
-[Networking.Protocols.Layers.Data]
-Name = 'Protocols'
-Note = ''
-Comment = ''
-
-[Networking.Protocols.Layers.Network]
-Name = 'Protocols'
-Note = ''
-Comment = ''
-
-[Networking.Protocols.Layers.Transport]
-Name = 'Protocols'
-Note = ''
-Comment = ''
-
-[Networking.Protocols.Layers.Session]
-Name = 'Protocols'
-Note = ''
-Comment = ''
-
-[Networking.Protocols.Layers.Presentation]
-Name = 'Protocols'
-Note = ''
-Comment = ''
-
-[Networking.Protocols.Layers.Application]
-Name = 'Protocols'
-Note = ''
-Comment = ''
-
-[Networking.Protocols.IEEE]
-Name = 'Institute Of Electrical And Electronics Engineers Networking Protocols'
-Note = 'The leading organization in developing standards for networking technologies. It has created numerous standards that have become fundamental to modern communication networks'
-Comment = ''
-
-[Networking.Protocols.IEEE.Wired]
-Name = 'IEEE Ethernet Standards'
-Note = 'Protocols for wired communications'
-Comment = ''
-
-[Networking.Protocols.IEEE.Ethernet]
-Name = 'IEEE Ethernet Standards'
-Note = 'Protocols for Ethernet standard communications'
-Comment = ''
-
-[Networking.Protocols.IEEE.Ethernet.802.3]
-Name = '802.3'
-Note = 'The foundational standard for ethernet networks, defining the physical layer and the MAC layer'
-Comment = ''
-
-[Networking.Protocols.IEEE.Ethernet.802.3.U]
-Name = '802.3u'
-Note = 'Gigabit Ethernet standard'
-Comment = ''
-
-[Networking.Protocols.IEEE.Ethernet.802.3.AB]
-Name = '802.3ab'
-Note = '10 gigabit Ethernet standards'
-Comment = ''
-
-[Networking.Protocols.IEEE.Ethernet.802.3.AE]
-Name = '802.3ae'
-Note = '40 gigabit Ethernet standards'
-Comment = ''
-
-[Networking.Protocols.IEEE.Ethernet.802.3.BA]
-Name = '802.3ba'
-Note = '100 gigabit ethernet standards'
-Comment = ''
-
-[Networking.Protocols.IEEE.Ethernet.802.17]
-Name = '802.17'
-Note = 'Resilient Packet Ring (RPR) standard for optical networking'
-Comment = 'Optical networking'
-
-[Networking.Protocols.IEEE.Ethernet.1394]
-Name = '1394'
-Note = 'FireWire standard for high speed serial bus'
-Comment = ''
-
-[Networking.Protocols.IEEE.Wireless]
-Name = 'IEEE Wireless STandards'
-Note = 'Protocols standards for wireless communications'
-Comment = ''
-
-[Networking.Protocols.IEEE.Wireless.802.11]
-Name = '802.11'
-Note = 'The WiFi standard, defining the physical and MAC layers for wireless local area networks'
-Comment = ''
-
-[Networking.Protocols.IEEE.Wireless.802.11.A]
-Name = '802.11'
-Note = 'WiFi operating in 5GHz band'
-Comment = ''
-
-[Networking.Protocols.IEEE.Wireless.802.11.B]
-Name = '802.11'
-Note = 'WiFi operating in 2.4GHz band'
-Comment = ''
-
-[Networking.Protocols.IEEE.Wireless.802.11.G]
-Name = '802.11'
-Note = 'WiFi operating in 2.4GHz band but for higher data rates'
-Comment = ''
-
-[Networking.Protocols.IEEE.Wireless.802.11.N]
-Name = '802.11'
-Note = 'WiFi for Multiple-Input Multiple-Output (MIMO) for higher throughput'
-Comment = ''
-
-[Networking.Protocols.IEEE.Wireless.802.11.AC]
-Name = '802.11'
-Note = 'WiFi for Multi-User Multiple-Input Multiple-Output (MU-MIMO) for higher throughput in dense environments'
-Comment = ''
-
-[Networking.Protocols.IEEE.Wireless.802.11.AX]
-Name = '802.11'
-Note = 'WiFi 6 standard for better performance overall'
-Comment = ''
-
-[Networking.Protocols.IEEE.Wireless.802.15]
-Name = '802.15'
-Note = 'Bluetooth standard for short range communications'
-Comment = ''
-
-[Networking.Protocols.IEEE.Wireless.802.16]
-Name = '802.16'
-Note = 'WiMAX standard for broadband wireless access'
-Comment = ''
-
-[Networking.Protocols.IEEE.Wireless.802.18]
-Name = '802.18'
-Note = 'Radio frequency identification standard (RFID)'
-Comment = ''
-
-# End of Protocols
 
 [Networking.Topology]
 Name = 'Network Topology'
-Note = ''
-Comment = ''
+Note = 'The physical and logical structure of a network, including how nodes are connected and how data flows'
+Comment = 'Before building a network you need to plan it out, what devices you will need, how they will connect, what wires you need, ect'
 
 [Networking.Topology.Shape]
 Name = 'Network Shape'
-Note = ''
+Note = 'The shape of a network topology represents the physical layout of devices and connections within a network. It determines how devices are interconnected and how data flows between them'
+Comment = ''
+
+[Networking.Topology.Shape.Star]
+Name = 'Star'
+Note = 'Also called a hub topology, all devices are connected to one hub device'
+Comment = 'This is a vulnerable design because if the hub device fails all else fails'
+
+[Networking.Topology.Shape.Bus]
+Name = 'Bus'
+Note = 'All devices are connected using the same cable'
+Comment = 'If the wire fails then all other devices fail'
+
+[Networking.Topology.Shape.Ring]
+Name = 'Ring'
+Note = 'Devices are connected in a circular fashion'
+Comment = 'Fails the same way string lights fail'
+
+[Networking.Topology.Shape.Mesh]
+Name = 'Mesh'
+Note = 'Every device is connected to every other device'
+Comment = 'Does not have to be absolute'
+
+[Networking.Topology.Shape.Hybrid]
+Name = 'Hybrid'
+Note = 'Almost any shape can exist, you can combine multiple shapes together'
 Comment = ''
 
 # End of Network Shape
@@ -1661,6 +1525,11 @@ Comment = ''
 [Networking.Topology.Levels]
 Name = 'Network Levels'
 Note = 'The classification of the size of a network and what it contains'
+Comment = ''
+
+[Networking.Topology.Levels.Node]
+Name = 'Node'
+Note = 'An individual device within a network'
 Comment = ''
 
 [Networking.Topology.Levels.PAN]
@@ -1688,15 +1557,74 @@ Name = 'Wide Area Network'
 Note = 'Multiple MANs connected together'
 Comment = ''
 
-# End of Network Levels
+    # End of Network Levels
 # End of Network Topology
 
-[Networking.Cloud]
-Name = 'Cloud'
-Note = ''
+[Networking.Protocols]
+Name = 'Protocols'
+Note = 'Sets of rules and standards that govern how devices communicate on a network. They provide a common language and framework for data exchange, ensuring that different devices can understand and interact with each other'
 Comment = ''
 
-# End of Cloud
+[Networking.Protocols.Frameworks]
+Name = 'Networking Protocol Frameworks'
+Note = 'Different frameworks what protocols have to follow'
+Comment = ''
+
+[Networking.Protocols.Frameworks.OSI]
+Name = 'Open Systems Interconnection Model'
+Note = 'The OSI model provides a conceptual universal language for computer networking by dividing network communication into seven layers, each with a specific function. The OSI model allows different computer systems to communicate with each other using standard protocols. Each layer communicates with the layers above and below it'
+Comment = 'The OSI model does not have any real world implementations and is purely conceptual. The TCP/Ip model is the one with real world implementations'
+
+[Networking.Protocols.Frameworks.OSI.Layers]
+Name = 'OSI Model Layers'
+Note = 'The 7 layers within the OSI model'
+Comment = ''
+
+[Networking.Protocols.Frameworks.OSI.Layers.Physical]
+Name = 'Physical Layer'
+Note = 'Transmits raw bits over a physical medium'
+Comment = 'Copper cables, fiber optics, wireless signals'
+
+[Networking.Protocols.Frameworks.OSI.Layers.Link]
+Name = 'Data Link Layer'
+Note = 'Packages data into frames, handles error detection and correction, and provides flow control'
+Comment = 'Ethernet, Wi-Fi, PPP'
+
+[Networking.Protocols.Frameworks.OSI.Layers.Network]
+Name = 'Network Layer'
+Note = 'Routes data packets between networks, handles addressing, and provides routing information'
+Comment = 'IP, ICMP'
+
+[Networking.Protocols.Frameworks.OSI.Layers.Transport]
+Name = 'Transport Layer'
+Note = 'Ensures reliable data delivery between end points, provides flow control, and multiplexing'
+Comment = 'TCP, UDP'
+
+[Networking.Protocols.Frameworks.OSI.Layers.Session]
+Name = 'Session Layer'
+Note = 'Establishes, manages, and terminates sessions between devices'
+Comment = 'Session establishment, synchronization points'
+
+[Networking.Protocols.Frameworks.OSI.Layers.Presentation]
+Name = 'Presentation Layer'
+Note = 'Handles data encoding, encryption, and compression'
+Comment = 'ASCII, UTF-8, SSL/TLS'
+
+[Networking.Protocols.Frameworks.OSI.Layers.Application]
+Name = 'Application Layer'
+Note = 'Provides services directly to user applications'
+Comment = 'HTTP, FTP, SMTP, Telnet'
+
+    # End of OSI Model Layers
+# End of Open Systems Interconnection Model
+
+[Networking.Protocols.Frameworks.TCPIP]
+Name = 'Transmission Control Protocol/Internet Protocol'
+Note = 'Simplified version of the OSI model, consisting of four layers. It is a set of rules that allows computers and other devices to communicate with each other on a network, such as the internet'
+Comment = 'This is the model that is actually used for networking'
+
+        # End of Networking Protocol Frameworks
+    # End of Protocols
 # End of Networking
 
 [Security]
@@ -1721,7 +1649,7 @@ Name = 'Internal Network Security'
 Note = ''
 Comment = ''
 
-# End of Internal Network Security
+    # End of Internal Network Security
 # End of Network Security
 
 [Security.Application]
@@ -1741,7 +1669,7 @@ Name = 'Internal Application Security'
 Note = ''
 Comment = ''
 
-# End of Internal Application Security
+        # End of Internal Application Security
 # End of Application Security
 
 [Security.Physical]
@@ -1761,7 +1689,7 @@ Name = 'Internal Physical Security'
 Note = ''
 Comment = ''
 
-# End of Internal Physical Security
-# End of Physical Security
-# End of Security
+            # End of Internal Physical Security
+        # End of Physical Security
+    # End of Security
 # End :(
